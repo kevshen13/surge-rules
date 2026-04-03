@@ -1,6 +1,52 @@
 # NAME: AI_Domestic
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
-# DESCRIPTION: Domestic AI services rule list for Surge
-# UPDATED: 2026-04-03
+# DESCRIPTION: Domestic AI services and mainland-route rule list for Surge
+# UPDATED: 2026-04-04
+# MAINTENANCE: Maintain this list by routing path, not by company nationality.
+# RULE: Include domains/endpoints that should stay on domestic/direct routes in actual use.
+# RULE: If one vendor has both domestic and overseas versions, split by the actual route target.
+# RULE: Prefer dedicated domains/subdomains and keep broad keyword/domain rules conservative.
 
+# ==================== DeepSeek ====================
+DOMAIN-SUFFIX,deepseek.com
+
+# ==================== Doubao / ByteDance ====================
+DOMAIN-SUFFIX,doubao.com
+
+# ==================== Tencent Yuanbao / Hunyuan ====================
+DOMAIN-SUFFIX,yuanbao.tencent.com
+DOMAIN-SUFFIX,hunyuan.tencent.com
+
+# ==================== Baidu Wenxin / Yiyan ====================
+DOMAIN-SUFFIX,yiyan.baidu.com
+DOMAIN-SUFFIX,wenxin.baidu.com
+
+# ==================== iFLYTEK Spark ====================
+DOMAIN-SUFFIX,xinghuo.xfyun.cn
+
+# ==================== MiniMax / Hailuo CN ====================
+DOMAIN-SUFFIX,minimaxi.com
+DOMAIN-SUFFIX,hailuoai.com
+
+# ==================== Coze CN ====================
+DOMAIN-SUFFIX,coze.cn
+
+# ==================== Qwen / Tongyi CN ====================
+DOMAIN-SUFFIX,qwen-tongyi.aliyun.com
+DOMAIN,dashscope.aliyuncs.com
+
+# ==================== Moonshot / Kimi CN ====================
+DOMAIN-SUFFIX,moonshot.cn
+
+# ==================== Zhipu AI / GLM / Qingyan ====================
+DOMAIN-SUFFIX,bigmodel.cn
+DOMAIN-SUFFIX,chatglm.cn
+DOMAIN-SUFFIX,zhipuai.cn
+
+# ==================== SiliconFlow CN ====================
+DOMAIN-SUFFIX,siliconflow.cn
+
+# ==================== 01.AI / Lingyi ====================
+DOMAIN-SUFFIX,01.ai
+DOMAIN-SUFFIX,lingyiwanwu.com
