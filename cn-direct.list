@@ -2,5 +2,166 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: China direct-access services rule list for Surge
-# UPDATED: 2026-04-03
+# UPDATED: 2026-04-04
+# MAINTENANCE: Maintain this list by actual direct-route need.
+# RULE: Only keep services that should stay DIRECT in your current setup.
+# RULE: Prefer official domains, app process names, and stable IP ranges already validated in the live config.
 
+# ==================== WeChat / Weixin ====================
+PROCESS-NAME,WeChat
+PROCESS-NAME,Weixin
+DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
+DOMAIN,dldir1.qq.com
+DOMAIN,slife.xy-asia.com
+DOMAIN,soup.v.qq.com
+DOMAIN,vweixinf.tc.qq.com
+DOMAIN,weixin110.qq.com
+DOMAIN,wup.imtt.qq.com
+DOMAIN-SUFFIX,iot-tencent.com
+DOMAIN-SUFFIX,lbs.gtimg.com
+DOMAIN-SUFFIX,map.qq.com
+DOMAIN-SUFFIX,mmocbc.qpic.cn
+DOMAIN-SUFFIX,mmsns.qpic.cn
+DOMAIN-SUFFIX,m.qpic.cn
+DOMAIN-SUFFIX,pgc-image.qq.com
+DOMAIN-SUFFIX,qlogo.cn
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,up-hl.3g.qq.com
+DOMAIN-SUFFIX,video.weixin.qq.com
+DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,wechatlegal.net
+DOMAIN-SUFFIX,wechatos.net
+DOMAIN-SUFFIX,wechatpay.com
+DOMAIN-SUFFIX,weixin.com
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,weixinbridge.com
+DOMAIN-SUFFIX,weixinsxy.com
+DOMAIN-SUFFIX,wx.gtimg.com
+DOMAIN-SUFFIX,wx.qq.com
+DOMAIN-SUFFIX,wxapp.tc.qq.com
+DOMAIN-SUFFIX,wxs.qq.com
+DOMAIN-SUFFIX,yun-hl.3g.qq.com
+DOMAIN-SUFFIX,short.weixin.qq.com
+DOMAIN-KEYWORD,weixin
+DOMAIN-KEYWORD,wechat
+IP-CIDR,111.30.160.0/20,no-resolve
+IP-CIDR,112.53.11.0/24,no-resolve
+IP-CIDR,112.53.20.0/24,no-resolve
+IP-ASN,132203,no-resolve
+
+# ==================== Apple APNs ====================
+# Apple Support says APNs devices should ideally reach 17.0.0.0/8.
+# If not possible, Apple lists the narrower IPv4/IPv6 ranges below.
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,courier.push.apple.com
+IP-CIDR,17.249.0.0/16,no-resolve
+IP-CIDR,17.252.0.0/16,no-resolve
+IP-CIDR,17.57.144.0/22,no-resolve
+IP-CIDR,17.188.128.0/18,no-resolve
+IP-CIDR,17.188.20.0/23,no-resolve
+IP-CIDR6,2620:149:a44::/48,no-resolve
+IP-CIDR6,2403:300:a42::/48,no-resolve
+IP-CIDR6,2403:300:a51::/48,no-resolve
+IP-CIDR6,2a01:b740:a42::/48,no-resolve
+
+# ==================== Sunlogin / Oray ====================
+DOMAIN-KEYWORD,oray
+DOMAIN-KEYWORD,sunlogin
+DOMAIN-SUFFIX,oray.com
+DOMAIN-SUFFIX,oray.net
+DOMAIN-SUFFIX,orayimg.com
+DOMAIN-SUFFIX,sunlogin.net
+DOMAIN-SUFFIX,贝锐.com
+IP-CIDR,106.14.0.0/16,no-resolve
+IP-CIDR,114.215.0.0/16,no-resolve
+IP-CIDR,139.196.0.0/16,no-resolve
+
+# ==================== Narwal / 云鲸 ====================
+DOMAIN-SUFFIX,yunjing.cn
+DOMAIN-SUFFIX,narwals.com
+DOMAIN-SUFFIX,narwalrobotics.com
+DOMAIN-KEYWORD,narwal
+DOMAIN-SUFFIX,narwaltech.com
+DOMAIN-SUFFIX,cn.narwal.com
+DOMAIN-SUFFIX,cn-open.narwaltech.com
+DOMAIN-SUFFIX,narwal-general-public.oss-cn-shenzhen.aliyuncs.com
+DOMAIN-SUFFIX,narwal-test-public.oss-cn-shenzhen.aliyuncs.com
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,umengcloud.com
+DOMAIN-SUFFIX,jpush.cn
+DOMAIN-SUFFIX,jpush.io
+DOMAIN-SUFFIX,push.io
+
+# ==================== XiaoHongShu ====================
+DOMAIN-SUFFIX,fengkongcloud.com
+DOMAIN-SUFFIX,xhscdn.com
+DOMAIN-SUFFIX,xhscdn.net
+DOMAIN-SUFFIX,xiaohongshu.com
+
+# ==================== iQIYI ====================
+PROCESS-NAME,com.qiyi.video
+DOMAIN-SUFFIX,71.am
+DOMAIN-SUFFIX,71.am.com
+DOMAIN-SUFFIX,71edge.com
+DOMAIN-SUFFIX,71edge.net
+DOMAIN-SUFFIX,aianno.cn
+DOMAIN-SUFFIX,aianno.com
+DOMAIN-SUFFIX,aiqiyicloud-mgmt.com
+DOMAIN-SUFFIX,aiqiyicloud.com
+DOMAIN-SUFFIX,aiqiyicloud.net
+DOMAIN-SUFFIX,baiying.com
+DOMAIN-SUFFIX,gitv.cn
+DOMAIN-SUFFIX,gitv.tv
+DOMAIN-SUFFIX,ibkstore.com
+DOMAIN-SUFFIX,iq.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,iqiyi.demo.uwp
+DOMAIN-SUFFIX,iqiyiedge.com
+DOMAIN-SUFFIX,iqiyiedge.net
+DOMAIN-SUFFIX,iqiyipic.com
+DOMAIN-SUFFIX,jiangbing.cn
+DOMAIN-SUFFIX,pps.tv
+DOMAIN-SUFFIX,ppsimg.com
+DOMAIN-SUFFIX,ppstream.cn
+DOMAIN-SUFFIX,ppstream.com
+DOMAIN-SUFFIX,ppstream.com.cn
+DOMAIN-SUFFIX,ppstream.net
+DOMAIN-SUFFIX,ppstream.net.cn
+DOMAIN-SUFFIX,ppsurl.com
+DOMAIN-SUFFIX,qiyi.cn
+DOMAIN-SUFFIX,qiyi.com
+DOMAIN-SUFFIX,qiyipic.com
+DOMAIN-SUFFIX,qy.com
+DOMAIN-SUFFIX,qy.net
+DOMAIN-SUFFIX,suike.cn
+DOMAIN-KEYWORD,qiyi
+IP-CIDR,101.224.0.0/13,no-resolve
+IP-CIDR,103.44.56.0/22,no-resolve
+IP-CIDR,103.5.34.153/32,no-resolve
+IP-CIDR,104.109.129.153/32,no-resolve
+IP-CIDR,110.238.107.47/32,no-resolve
+IP-CIDR,118.26.120.0/24,no-resolve
+IP-CIDR,118.26.32.0/23,no-resolve
+IP-CIDR,119.176.0.0/12,no-resolve
+IP-CIDR,203.211.4.169/32,no-resolve
+IP-CIDR,203.211.4.193/32,no-resolve
+IP-CIDR,203.74.95.131/32,no-resolve
+IP-CIDR,203.74.95.139/32,no-resolve
+IP-CIDR,203.74.95.153/32,no-resolve
+IP-CIDR,210.201.32.11/32,no-resolve
+IP-CIDR,210.201.32.8/32,no-resolve
+IP-CIDR,210.71.227.200/32,no-resolve
+IP-CIDR,210.71.227.202/32,no-resolve
+IP-CIDR,23.211.15.99/32,no-resolve
+IP-CIDR,23.40.241.251/32,no-resolve
+IP-CIDR,23.40.242.10/32,no-resolve
+IP-CIDR,23.53.32.88/32,no-resolve
+USER-AGENT,PPStream*
+USER-AGENT,QIYI*
+USER-AGENT,QYPlayer*
+USER-AGENT,iQIYI*
+USER-AGENT,iQiYi*
+USER-AGENT,iQiyi*
