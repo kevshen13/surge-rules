@@ -4,7 +4,7 @@
 # DESCRIPTION: Trading-related websites rule list for Surge
 # UPDATED: 2026-04-04
 # MAINTENANCE: Maintain this list by route behavior and business usage.
-# RULE: Include trading business websites, prop firm portals, help centers, and official web properties that should follow the Special Sites group.
+# RULE: Include trading business websites, prop firm portals, help centers, and official web properties that should follow the Trading-sites group.
 # RULE: Prefer official site, help center, signup, and dashboard domains. Keep executable platforms and feed vendors in their own lists.
 
 # ==================== Lucid Trading ====================
