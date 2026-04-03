@@ -2,5 +2,92 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Trading applications rule list for Surge
-# UPDATED: 2026-04-03
+# UPDATED: 2026-04-04
+# MAINTENANCE: Maintain this list by trading software and platform usage.
+# RULE: Include charting, execution, order-flow, and analytics platforms that should follow the Trade Platform group.
+# RULE: Keep broker-specific account, auth, and gateway domains in broker-specific lists instead.
+# NOTE: thinkorswim / Schwab and IBKR stay in us-brokers.list rather than this app list.
 
+# ==================== NinjaTrader / Tradovate ====================
+PROCESS-NAME,NinjaTrader
+PROCESS-NAME,NinjaTrader 8
+DOMAIN-SUFFIX,ninjatrader.com
+DOMAIN-SUFFIX,tradovate.com
+DOMAIN-SUFFIX,tradovateapi.com
+DOMAIN,trader.tradovate.com
+DOMAIN,api.tradovate.com
+DOMAIN,live.tradovateapi.com
+DOMAIN,demo.tradovateapi.com
+DOMAIN,md.tradovateapi.com
+
+# ==================== MotiveWave ====================
+PROCESS-NAME,MotiveWave
+DOMAIN-SUFFIX,motivewave.com
+DOMAIN,support.motivewave.com
+
+# ==================== ATAS ====================
+PROCESS-NAME,ATAS
+DOMAIN-SUFFIX,atas.net
+DOMAIN,api.atas.net
+DOMAIN,my.atas.net
+DOMAIN,docs.atas.net
+DOMAIN-KEYWORD,atas
+
+# ==================== Bookmap ====================
+PROCESS-NAME,Bookmap
+DOMAIN-SUFFIX,bookmap.com
+DOMAIN,bookmap.com
+DOMAIN,go.bookmap.com
+DOMAIN,bookmapapp.com
+DOMAIN-KEYWORD,bookmap
+
+# ==================== MultiCharts ====================
+PROCESS-NAME,MultiCharts
+PROCESS-NAME,MultiCharts64
+PROCESS-NAME,MultiCharts .NET
+PROCESS-NAME,MultiCharts64 .NET
+DOMAIN-SUFFIX,multicharts.com
+DOMAIN,members.multicharts.com
+DOMAIN,download.multicharts.com
+DOMAIN-KEYWORD,multicharts
+
+# ==================== Jigsaw / daytradr ====================
+PROCESS-NAME,daytradr
+PROCESS-NAME,Daytradr
+PROCESS-NAME,Journalytix
+DOMAIN-SUFFIX,jigsawtrading.com
+DOMAIN-SUFFIX,journalytix.me
+DOMAIN,daytradr.jigsawtrading.com
+DOMAIN,members.jigsawtrading.com
+DOMAIN,help.jigsawtrading.com
+
+# ==================== TradingView ====================
+PROCESS-NAME,TradingView
+PROCESS-NAME,TradingView Desktop
+DOMAIN-SUFFIX,tradingview.com
+DOMAIN-KEYWORD,tradingview
+
+# ==================== TrendSpider ====================
+PROCESS-NAME,TrendSpider
+DOMAIN-SUFFIX,trendspider.com
+DOMAIN,status.trendspider.com
+DOMAIN-KEYWORD,trendspider
+
+# ==================== SpotGamma ====================
+DOMAIN-SUFFIX,spotgamma.com
+DOMAIN,support.spotgamma.com
+DOMAIN-KEYWORD,spotgamma
+
+# ==================== Quantower ====================
+PROCESS-NAME,Quantower
+PROCESS-NAME,Quantower Algo
+DOMAIN-SUFFIX,quantower.com
+DOMAIN-SUFFIX,quantower.org
+DOMAIN,help.quantower.com
+DOMAIN,api.quantower.com
+
+# ==================== eSignal ====================
+PROCESS-NAME,eSignal
+DOMAIN-SUFFIX,esignal.com
+DOMAIN,download.esignal.com
+DOMAIN,kb.esignal.com
