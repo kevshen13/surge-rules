@@ -3,6 +3,10 @@
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Overseas AI services and global-route rule list for Surge
 # UPDATED: 2026-04-03
+# MAINTENANCE: Maintain this list by routing path, not by company nationality.
+# RULE: Include domains/endpoints that should go overseas in actual use.
+# RULE: If one vendor has both domestic and overseas versions, split by the actual route target.
+# RULE: Keep broad keyword/domain rules conservative to avoid routing unrelated traffic.
 
 # ==================== OpenAI ====================
 DOMAIN,browser-intake-datadoghq.com
