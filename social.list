@@ -8,7 +8,9 @@
 # RULE: Keep DIRECT-only verification or anti-bot domains in the main config if they should not follow Social.
 
 # ==================== Telegram ====================
+DOMAIN-SUFFIX,cdn-telegram.org
 DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,telegram-cdn.org
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,telegram.me
 DOMAIN-SUFFIX,telegra.ph
@@ -25,6 +27,7 @@ DOMAIN-SUFFIX,discord.design
 DOMAIN-SUFFIX,discordstatus.com
 
 # ==================== X / Twitter ====================
+DOMAIN-SUFFIX,tweetdeck.com
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,twimg.com
@@ -36,6 +39,7 @@ DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fb.watch
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,fbsbx.com
 DOMAIN-SUFFIX,messenger.com
@@ -43,12 +47,18 @@ DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,ig.me
 DOMAIN-SUFFIX,threads.net
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
 
 # ==================== GitHub ====================
 DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.dev
+DOMAIN-SUFFIX,githubapp.com
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,githubassets.com
 DOMAIN-SUFFIX,githubstatus.com
 DOMAIN-SUFFIX,github.community
 DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubnext.com
+DOMAIN-SUFFIX,git.io
 DOMAIN-SUFFIX,ghcr.io

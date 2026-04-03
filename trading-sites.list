@@ -9,34 +9,55 @@
 
 # ==================== Lucid Trading ====================
 DOMAIN-SUFFIX,lucidtrading.com
-DOMAIN-SUFFIX,support.lucidtrading.com
+DOMAIN,support.lucidtrading.com
 
 # ==================== The Futures Desk ====================
 DOMAIN-SUFFIX,thefuturesdesk.com
 
 # ==================== Topstep ====================
 DOMAIN-SUFFIX,topstep.com
-DOMAIN-SUFFIX,help.topstep.com
+DOMAIN,help.topstep.com
 DOMAIN,status.topstep.com
 
 # ==================== Apex Trader Funding ====================
 DOMAIN-SUFFIX,apextraderfunding.com
-DOMAIN-SUFFIX,support.apextraderfunding.com
+DOMAIN,support.apextraderfunding.com
 
 # ==================== Earn2Trade ====================
 DOMAIN-SUFFIX,earn2trade.com
 
 # ==================== My Funded Futures ====================
 DOMAIN-SUFFIX,myfundedfutures.com
-DOMAIN-SUFFIX,help.myfundedfutures.com
+DOMAIN,help.myfundedfutures.com
 
 # ==================== Take Profit Trader ====================
 DOMAIN-SUFFIX,takeprofittrader.com
-DOMAIN-SUFFIX,try.takeprofittrader.com
+DOMAIN,try.takeprofittrader.com
 
 # ==================== Tradeify ====================
 DOMAIN-SUFFIX,tradeify.co
 
 # ==================== The Trading Pit ====================
 DOMAIN-SUFFIX,thetradingpit.com
-DOMAIN-SUFFIX,support.thetradingpit.com
+DOMAIN,support.thetradingpit.com
+
+# ==================== Bulenox ====================
+DOMAIN-SUFFIX,bulenox.com
+
+# ==================== TradeDay ====================
+DOMAIN-SUFFIX,tradeday.com
+
+# ==================== TickTickTrader ====================
+DOMAIN-SUFFIX,tickticktrader.com
+
+# ==================== Elite Trader Funding ====================
+DOMAIN-SUFFIX,elitetraderfunding.com
+
+# ==================== Maven Trading ====================
+DOMAIN-SUFFIX,maventrading.com
+
+# ==================== FundedNext ====================
+DOMAIN-SUFFIX,fundednext.com
+
+# ==================== TradeFundrr ====================
+DOMAIN-SUFFIX,tradefundrr.com

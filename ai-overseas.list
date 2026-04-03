@@ -2,45 +2,37 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Overseas AI services and global-route rule list for Surge
-# UPDATED: 2026-04-03
+# UPDATED: 2026-04-04
 # MAINTENANCE: Maintain this list by routing path, not by company nationality.
 # RULE: Include domains/endpoints that should go overseas in actual use.
 # RULE: If one vendor has both domestic and overseas versions, split by the actual route target.
 # RULE: Keep broad keyword/domain rules conservative to avoid routing unrelated traffic.
 
 # ==================== OpenAI ====================
+DOMAIN,ab.chatgpt.com
+DOMAIN,api.openai.com
+DOMAIN,auth.openai.com
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,chatgpt.livekit.cloud
+DOMAIN,client-api.arkoselabs.com
+DOMAIN,events.statsigapi.net
+DOMAIN,files.oaiusercontent.com
+DOMAIN,host.livekit.cloud
 DOMAIN,openai-api.arkoselabs.com
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,openaicom.imgix.net
+DOMAIN,platform.openai.com
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,static.cloudflareinsights.com
+DOMAIN,turn.livekit.cloud
 DOMAIN-SUFFIX,ai.com
-DOMAIN-SUFFIX,algolia.net
-DOMAIN-SUFFIX,api.statsig.com
-DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,chatgpt.livekit.cloud
-DOMAIN-SUFFIX,ab.chatgpt.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,host.livekit.cloud
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,openaicom.imgix.net
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,chatgpt
 IP-CIDR,24.199.123.28/32,no-resolve
@@ -48,7 +40,11 @@ IP-CIDR,64.23.132.171/32,no-resolve
 IP-ASN,20473,no-resolve
 
 # ==================== Anthropic / Claude ====================
+DOMAIN,api.anthropic.com
 DOMAIN,cdn.usefathom.com
+DOMAIN,console.anthropic.com
+DOMAIN,docs.anthropic.com
+DOMAIN,support.anthropic.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claudeapi.com
@@ -59,13 +55,14 @@ DOMAIN-KEYWORD,claude
 DOMAIN,ai.google.dev
 DOMAIN,aistudio.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,bard.google.com
+DOMAIN,deepmind.google
+DOMAIN,gemini.google.com
+DOMAIN,generativelanguage.googleapis.com
 DOMAIN,makersuite.google.com
-DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN,proactivebackend-pa.googleapis.com
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
@@ -73,14 +70,16 @@ DOMAIN-KEYWORD,gemini
 DOMAIN-KEYWORD,bard
 
 # ==================== Grok / xAI ====================
+DOMAIN,api.x.ai
+DOMAIN,console.x.ai
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN-KEYWORD,grok
 DOMAIN-KEYWORD,xai
 
 # ==================== Microsoft Copilot / GitHub Copilot ====================
-DOMAIN-SUFFIX,copilot.microsoft.com
-DOMAIN-SUFFIX,copilot.github.com
+DOMAIN,copilot.microsoft.com
+DOMAIN,copilot.github.com
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-KEYWORD,copilot
 DOMAIN-KEYWORD,bingcopilot
@@ -94,10 +93,10 @@ DOMAIN-KEYWORD,llama
 # ==================== MiniMax ====================
 DOMAIN-SUFFIX,minimax.io
 DOMAIN-SUFFIX,minimax.chat
-DOMAIN-SUFFIX,agent.minimax.io
-DOMAIN-SUFFIX,platform.minimax.io
-DOMAIN-SUFFIX,chat.minimax.io
-DOMAIN-SUFFIX,api.minimax.io
+DOMAIN,agent.minimax.io
+DOMAIN,platform.minimax.io
+DOMAIN,chat.minimax.io
+DOMAIN,api.minimax.io
 
 # ==================== OpenRouter ====================
 DOMAIN-SUFFIX,openrouter.ai
@@ -105,47 +104,65 @@ DOMAIN-SUFFIX,openrouter.net
 DOMAIN-KEYWORD,openrouter
 
 # ==================== Perplexity ====================
+DOMAIN,api.perplexity.ai
+DOMAIN,www.perplexity.ai
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-KEYWORD,perplexity
 
 # ==================== Poe ====================
+DOMAIN,www.poe.com
 DOMAIN-SUFFIX,poe.com
 DOMAIN-KEYWORD,poe
 
 # ==================== Cursor ====================
+DOMAIN,www.cursor.com
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,todesktop.com
 DOMAIN-KEYWORD,cursor
 
 # ==================== Mistral AI ====================
+DOMAIN,api.mistral.ai
 DOMAIN-SUFFIX,mistral.ai
 DOMAIN-SUFFIX,mistralcdn.com
 DOMAIN,chat.mistral.ai
+DOMAIN,console.mistral.ai
+DOMAIN,docs.mistral.ai
 DOMAIN-KEYWORD,mistral
 
 # ==================== Cohere (Embedding/Rerank) ====================
+DOMAIN,api.cohere.ai
+DOMAIN,dashboard.cohere.com
+DOMAIN,docs.cohere.com
 DOMAIN-SUFFIX,cohere.ai
 DOMAIN-SUFFIX,cohere.com
 DOMAIN-KEYWORD,cohere
 
 # ==================== Hugging Face ====================
+DOMAIN,api-inference.huggingface.co
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,hf.co
-DOMAIN-SUFFIX,datasets.huggingface.co
-DOMAIN-SUFFIX,models.huggingface.co
+DOMAIN-SUFFIX,hf.space
+DOMAIN,datasets.huggingface.co
+DOMAIN,models.huggingface.co
 DOMAIN-KEYWORD,huggingface
 DOMAIN-KEYWORD,transformers
 
 # ==================== Replicate ====================
+DOMAIN,api.replicate.com
+DOMAIN,replicate.delivery
 DOMAIN-SUFFIX,replicate.com
 DOMAIN-KEYWORD,replicate
 
 # ==================== Together AI ====================
+DOMAIN,api.together.xyz
+DOMAIN,docs.together.ai
 DOMAIN-SUFFIX,together.ai
 DOMAIN-KEYWORD,togetherai
 
 # ==================== Fireworks AI ====================
+DOMAIN,api.fireworks.ai
+DOMAIN,docs.fireworks.ai
 DOMAIN-SUFFIX,fireworks.ai
 DOMAIN-KEYWORD,fireworks
 
@@ -159,16 +176,21 @@ DOMAIN-KEYWORD,groq
 DOMAIN-SUFFIX,coze.com
 
 # ==================== Dify ====================
+DOMAIN,cloud.dify.ai
+DOMAIN,docs.dify.ai
 DOMAIN-SUFFIX,dify.ai
 DOMAIN-KEYWORD,dify
 
 # ==================== Qwen / Tongyi (Alibaba) ====================
+DOMAIN,www.qwen.ai
 DOMAIN-SUFFIX,qwen.ai
 
 # ==================== Moonshot / Kimi ====================
+DOMAIN,www.kimi.com
 DOMAIN-SUFFIX,kimi.com
 
 # ==================== Z.AI / GLM ====================
+DOMAIN,www.z.ai
 DOMAIN-SUFFIX,z.ai
 
 # ==================== 01.AI / Yi ====================
@@ -178,19 +200,22 @@ DOMAIN-SUFFIX,01.ai
 DOMAIN-SUFFIX,internlm.org
 
 # ==================== Jina AI (Embedding/Rerank) ====================
+DOMAIN,api.jina.ai
+DOMAIN,docs.jina.ai
 DOMAIN-SUFFIX,jina.ai
 DOMAIN-SUFFIX,jina.net
 DOMAIN-KEYWORD,jina
 
 # ==================== SiliconFlow ====================
+DOMAIN,api.siliconflow.com
+DOMAIN,docs.siliconflow.com
 DOMAIN-SUFFIX,siliconflow.com
 
 # ==================== Cerebras ====================
+DOMAIN,cloud.cerebras.ai
+DOMAIN,inference.cerebras.ai
 DOMAIN-SUFFIX,cerebras.net
 DOMAIN-KEYWORD,cerebras
-
-# ==================== Le Chat (Mistral) ====================
-DOMAIN,chat.mistral.ai
 
 # ==================== Character.AI ====================
 DOMAIN-SUFFIX,character.ai
@@ -201,13 +226,15 @@ DOMAIN-SUFFIX,pi.ai
 DOMAIN-KEYWORD,inflection
 
 # ==================== Stability AI ====================
+DOMAIN,api.stability.ai
+DOMAIN,platform.stability.ai
 DOMAIN-SUFFIX,stability.ai
 DOMAIN-KEYWORD,stabilityai
 
 # ==================== Midjourney ====================
 DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,mj.gallery
-DOMAIN-SUFFIX,cdn.midjourney.com
+DOMAIN,cdn.midjourney.com
 DOMAIN-KEYWORD,midjourney
 
 # ==================== Leonardo.ai ====================
@@ -215,6 +242,7 @@ DOMAIN-SUFFIX,leonardo.ai
 DOMAIN-KEYWORD,leonardoai
 
 # ==================== Runway ====================
+DOMAIN,app.runwayml.com
 DOMAIN-SUFFIX,runwayml.com
 DOMAIN-KEYWORD,runway
 
@@ -228,13 +256,13 @@ DOMAIN-KEYWORD,heygen
 
 # ==================== D-ID ====================
 DOMAIN-SUFFIX,d-id.com
-DOMAIN-KEYWORD,did
 
 # ==================== Synthesia ====================
 DOMAIN-SUFFIX,synthesia.io
 DOMAIN-KEYWORD,synthesia
 
 # ==================== ElevenLabs ====================
+DOMAIN,api.elevenlabs.io
 DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,elevenlabs.com
 DOMAIN-KEYWORD,elevenlabs
@@ -253,7 +281,7 @@ DOMAIN-SUFFIX,canva.com
 DOMAIN-KEYWORD,canva
 
 # ==================== Adobe Firefly ====================
-DOMAIN-SUFFIX,firefly.adobe.com
+DOMAIN,firefly.adobe.com
 DOMAIN-KEYWORD,firefly
 DOMAIN-KEYWORD,adobeai
 
@@ -299,7 +327,7 @@ DOMAIN-KEYWORD,paperswithcode
 
 # ==================== LangChain ====================
 DOMAIN-SUFFIX,langchain.com
-DOMAIN-SUFFIX,python.langchain.com
+DOMAIN,python.langchain.com
 DOMAIN-KEYWORD,langchain
 
 # ==================== AutoGPT / Agent ====================
@@ -326,7 +354,6 @@ DOMAIN-KEYWORD,replit
 
 # ==================== v0 / Vercel AI ====================
 DOMAIN-SUFFIX,v0.dev
-DOMAIN-KEYWORD,v0
 
 # ==================== Bolt ====================
 DOMAIN-SUFFIX,bolt.new

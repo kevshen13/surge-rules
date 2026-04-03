@@ -21,6 +21,7 @@ DOMAIN-SUFFIX,thinkorswim.com
 DOMAIN-SUFFIX,tdameritrade.com
 DOMAIN,developer.schwab.com
 DOMAIN,api.schwabapi.com
+DOMAIN,tos.mx
 IP-CIDR,198.235.0.0/16,no-resolve
 
 # ==================== Interactive Brokers / IBKR ====================
@@ -29,13 +30,18 @@ DOMAIN-SUFFIX,ibkr.com
 DOMAIN-SUFFIX,ibllc.com
 DOMAIN-SUFFIX,ibllc.com.cn
 DOMAIN,api.ibkr.com
+DOMAIN,gdcdyn.interactivebrokers.com
 DOMAIN,gw.interactivebrokers.com
 DOMAIN,ndc1.ibllc.com
+DOMAIN,ndcdyn.interactivebrokers.com
 DOMAIN,cdc1.ibllc.com
 DOMAIN,mcgw1.ibllc.com.cn
 DOMAIN,download.interactivebrokers.com
 DOMAIN,download2.interactivebrokers.com
+DOMAIN,portal.interactivebrokers.com
 DOMAIN,pws.interactivebrokers.com
+DOMAIN,www.ibkr.com
+DOMAIN,www.interactivebrokers.com
 
 # ==================== FOREX.com / StoneX / City Index ====================
 DOMAIN-SUFFIX,forex.com
@@ -44,6 +50,8 @@ DOMAIN-SUFFIX,cityindex.com
 DOMAIN,ciapi.cityindex.com
 DOMAIN,push.cityindex.com
 DOMAIN,docs.labs.gaincapital.com
+DOMAIN,www.cityindex.com
+DOMAIN,www.forex.com
 IP-CIDR,12.130.150.0/24,no-resolve
 IP-CIDR,63.167.228.0/24,no-resolve
 
@@ -52,14 +60,26 @@ DOMAIN-SUFFIX,oanda.com
 DOMAIN-SUFFIX,oanda.net
 DOMAIN-SUFFIX,fxcorporate.com
 DOMAIN,developer.oanda.com
+DOMAIN,fxpractice.oanda.com
+DOMAIN,fxtrade.oanda.com
 DOMAIN,api-fxtrade.oanda.com
 DOMAIN,stream-fxtrade.oanda.com
 DOMAIN,api-fxpractice.oanda.com
 DOMAIN,stream-fxpractice.oanda.com
+DOMAIN,www.oanda.com
 
 # ==================== AMP Futures ====================
 DOMAIN-SUFFIX,ampfutures.com
 DOMAIN-SUFFIX,ampglobal.com
 DOMAIN-SUFFIX,ampclientportal.com
+DOMAIN,portal.ampclientportal.com
 # AMP's market data traffic is commonly carried by separate feed vendors
 # such as CQG / Rithmic / TT and should stay in their dedicated rules.
+
+# ==================== Tastytrade ====================
+DOMAIN-SUFFIX,tastytrade.com
+DOMAIN-SUFFIX,tastylive.com
+
+# ==================== TradeStation ====================
+DOMAIN-SUFFIX,tradestation.com
+DOMAIN-SUFFIX,tradestation-international.com

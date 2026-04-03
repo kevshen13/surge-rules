@@ -9,44 +9,62 @@
 # RULE: Prefer dedicated domains/subdomains and keep broad keyword/domain rules conservative.
 
 # ==================== DeepSeek ====================
+DOMAIN,api.deepseek.com
+DOMAIN,chat.deepseek.com
+DOMAIN,platform.deepseek.com
+DOMAIN,download.deepseek.com
 DOMAIN-SUFFIX,deepseek.com
 
 # ==================== Doubao / ByteDance ====================
+DOMAIN,www.doubao.com
 DOMAIN-SUFFIX,doubao.com
 
 # ==================== Tencent Yuanbao / Hunyuan ====================
+DOMAIN,open.hunyuan.tencent.com
 DOMAIN-SUFFIX,yuanbao.tencent.com
 DOMAIN-SUFFIX,hunyuan.tencent.com
 
 # ==================== Baidu Wenxin / Yiyan ====================
+DOMAIN,qianfan.baidubce.com
 DOMAIN-SUFFIX,yiyan.baidu.com
 DOMAIN-SUFFIX,wenxin.baidu.com
 
 # ==================== iFLYTEK Spark ====================
+DOMAIN,spark-api.xf-yun.com
 DOMAIN-SUFFIX,xinghuo.xfyun.cn
 
 # ==================== MiniMax / Hailuo CN ====================
+DOMAIN,agent.minimaxi.com
+DOMAIN,platform.minimaxi.com
+DOMAIN,www.hailuoai.com
 DOMAIN-SUFFIX,minimaxi.com
 DOMAIN-SUFFIX,hailuoai.com
 
 # ==================== Coze CN ====================
+DOMAIN,www.coze.cn
 DOMAIN-SUFFIX,coze.cn
 
 # ==================== Qwen / Tongyi CN ====================
+DOMAIN,tongyi.aliyun.com
+DOMAIN,bailian.console.aliyun.com
 DOMAIN-SUFFIX,qwen-tongyi.aliyun.com
 DOMAIN,dashscope.aliyuncs.com
 
 # ==================== Moonshot / Kimi CN ====================
+DOMAIN,kimi.moonshot.cn
+DOMAIN,platform.moonshot.cn
 DOMAIN-SUFFIX,moonshot.cn
 
 # ==================== Zhipu AI / GLM / Qingyan ====================
+DOMAIN,open.bigmodel.cn
 DOMAIN-SUFFIX,bigmodel.cn
 DOMAIN-SUFFIX,chatglm.cn
 DOMAIN-SUFFIX,zhipuai.cn
 
 # ==================== SiliconFlow CN ====================
+DOMAIN,api.siliconflow.cn
+DOMAIN,docs.siliconflow.cn
 DOMAIN-SUFFIX,siliconflow.cn
 
 # ==================== 01.AI / Lingyi ====================
-DOMAIN-SUFFIX,01.ai
 DOMAIN-SUFFIX,lingyiwanwu.com

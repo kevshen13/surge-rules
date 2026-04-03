@@ -9,6 +9,7 @@
 
 # ==================== IQFeed / DTN ====================
 DOMAIN,login.interquote.com
+DOMAIN,iqhelp.dtn.com
 DOMAIN-SUFFIX,iqfeed.net
 DOMAIN-SUFFIX,interquote.com
 DOMAIN-SUFFIX,dtn.com
@@ -30,6 +31,8 @@ PROCESS-NAME,CQG Trader
 PROCESS-NAME,QTrader
 DOMAIN-SUFFIX,cqg.com
 DOMAIN-SUFFIX,cqgtrader.com
+DOMAIN,help.cqg.com
+DOMAIN,partners.cqg.com
 # Official CQG technical specifications list destination ports 2823 and 443
 # and the following documented network ranges.
 IP-CIDR,64.208.51.0/24,no-resolve

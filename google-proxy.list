@@ -8,13 +8,19 @@
 # RULE: Keep this list conservative and focused on domains that are known to fail or stall on direct routes.
 
 # ==================== Google connectivity / static ====================
+DOMAIN,accounts.google.com
 DOMAIN,connectivitycheck.gstatic.com
+DOMAIN,inbox.google.com
+DOMAIN,mail.google.com
 DOMAIN,ssl.gstatic.com
+DOMAIN,smtp-relay.google.com
 DOMAIN,www.gstatic.com
 DOMAIN,fonts.googleapis.com
 DOMAIN,fonts.gstatic.com
+DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googlemail.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,withgoogle.com
 

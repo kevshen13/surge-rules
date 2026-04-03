@@ -11,17 +11,23 @@
 # ==================== NinjaTrader / Tradovate ====================
 PROCESS-NAME,NinjaTrader
 PROCESS-NAME,NinjaTrader 8
+PROCESS-NAME,Tradovate
 DOMAIN-SUFFIX,ninjatrader.com
 DOMAIN-SUFFIX,tradovate.com
 DOMAIN-SUFFIX,tradovateapi.com
 DOMAIN,trader.tradovate.com
 DOMAIN,api.tradovate.com
+DOMAIN,auth.tradovate.com
+DOMAIN,community.tradovate.com
 DOMAIN,live.tradovateapi.com
 DOMAIN,demo.tradovateapi.com
+DOMAIN,login.tradovate.com
 DOMAIN,md.tradovateapi.com
+DOMAIN,web.tradovate.com
 
 # ==================== MotiveWave ====================
 PROCESS-NAME,MotiveWave
+DOMAIN,www.motivewave.com
 DOMAIN-SUFFIX,motivewave.com
 DOMAIN,support.motivewave.com
 
@@ -29,6 +35,7 @@ DOMAIN,support.motivewave.com
 PROCESS-NAME,ATAS
 DOMAIN-SUFFIX,atas.net
 DOMAIN,api.atas.net
+DOMAIN,support.atas.net
 DOMAIN,my.atas.net
 DOMAIN,docs.atas.net
 DOMAIN-KEYWORD,atas
@@ -37,6 +44,7 @@ DOMAIN-KEYWORD,atas
 PROCESS-NAME,Bookmap
 DOMAIN-SUFFIX,bookmap.com
 DOMAIN,bookmap.com
+DOMAIN,bookmap-data.bookmap.com
 DOMAIN,go.bookmap.com
 DOMAIN,bookmapapp.com
 DOMAIN-KEYWORD,bookmap
@@ -49,6 +57,7 @@ PROCESS-NAME,MultiCharts64 .NET
 DOMAIN-SUFFIX,multicharts.com
 DOMAIN,members.multicharts.com
 DOMAIN,download.multicharts.com
+DOMAIN,forum.multicharts.com
 DOMAIN-KEYWORD,multicharts
 
 # ==================== Jigsaw / daytradr ====================
@@ -60,22 +69,29 @@ DOMAIN-SUFFIX,journalytix.me
 DOMAIN,daytradr.jigsawtrading.com
 DOMAIN,members.jigsawtrading.com
 DOMAIN,help.jigsawtrading.com
+DOMAIN,www.jigsawtrading.com
 
 # ==================== TradingView ====================
 PROCESS-NAME,TradingView
 PROCESS-NAME,TradingView Desktop
 DOMAIN-SUFFIX,tradingview.com
+DOMAIN,help.tradingview.com
+DOMAIN,s.tradingview.com
+DOMAIN,static.tradingview.com
+DOMAIN,www.tradingview.com
 DOMAIN-KEYWORD,tradingview
 
 # ==================== TrendSpider ====================
 PROCESS-NAME,TrendSpider
 DOMAIN-SUFFIX,trendspider.com
+DOMAIN,charts.trendspider.com
 DOMAIN,status.trendspider.com
 DOMAIN-KEYWORD,trendspider
 
 # ==================== SpotGamma ====================
 DOMAIN-SUFFIX,spotgamma.com
 DOMAIN,support.spotgamma.com
+DOMAIN,www.spotgamma.com
 DOMAIN-KEYWORD,spotgamma
 
 # ==================== Quantower ====================
@@ -85,9 +101,20 @@ DOMAIN-SUFFIX,quantower.com
 DOMAIN-SUFFIX,quantower.org
 DOMAIN,help.quantower.com
 DOMAIN,api.quantower.com
+DOMAIN,www.quantower.com
 
 # ==================== eSignal ====================
 PROCESS-NAME,eSignal
 DOMAIN-SUFFIX,esignal.com
 DOMAIN,download.esignal.com
 DOMAIN,kb.esignal.com
+DOMAIN,www.esignal.com
+
+# ==================== Optimus Flow ====================
+PROCESS-NAME,OptimusFlow
+DOMAIN-SUFFIX,optimusflow.com
+
+# ==================== Medved Trader ====================
+PROCESS-NAME,Medved Trader
+PROCESS-NAME,MedvedTrader
+DOMAIN-SUFFIX,medvedtrader.com

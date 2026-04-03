@@ -10,18 +10,33 @@
 # RULE: Put Kraken and other US-only / US-routed crypto brokers into us-brokers.list instead.
 
 # ==================== Binance (Global, exclude Binance.US) ====================
+DOMAIN,www.binance.com
+DOMAIN,api.binance.com
+DOMAIN,api-gcp.binance.com
+DOMAIN,stream.binance.com
+DOMAIN,stream.binancefuture.com
+DOMAIN,data.binance.com
+DOMAIN,developers.binance.com
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.me
 DOMAIN-SUFFIX,bnbdstatic.com
 
 # ==================== OKX (Global, exclude US/EU regional sites) ====================
+DOMAIN,api.okx.com
+DOMAIN,app.okx.com
+DOMAIN,my.okx.com
 DOMAIN,okx.com
+DOMAIN,static.okx.com
 DOMAIN,www.okx.com
 DOMAIN,ws.okx.com
 DOMAIN,wspap.okx.com
 DOMAIN,okx.com.cdn.cloudflare.net
 
 # ==================== Bybit (Global) ====================
+DOMAIN,api-testnet.bybit.com
+DOMAIN,api.bybit.com
+DOMAIN,stream.bybit.com
+DOMAIN,www.bybit.com
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bytick.com
 
@@ -29,13 +44,17 @@ DOMAIN-SUFFIX,bytick.com
 DOMAIN-SUFFIX,deribit.com
 DOMAIN,docs.deribit.com
 DOMAIN,support.deribit.com
+DOMAIN,test.deribit.com
+DOMAIN,www.deribit.com
 
 # ==================== Pionex / 派网 ====================
 DOMAIN-SUFFIX,pionex.com
 DOMAIN,api.pionex.com
+DOMAIN,www.pionex.com
 
 # ==================== Polymarket ====================
 DOMAIN-SUFFIX,polymarket.com
+DOMAIN,www.polymarket.com
 DOMAIN,docs.polymarket.com
 DOMAIN,gamma-api.polymarket.com
 DOMAIN,data-api.polymarket.com
@@ -43,20 +62,46 @@ DOMAIN,clob.polymarket.com
 DOMAIN,bridge.polymarket.com
 
 # ==================== Bitget ====================
+DOMAIN,api.bitget.com
+DOMAIN,www.bitget.com
 DOMAIN-SUFFIX,bitget.com
 
 # ==================== KuCoin ====================
+DOMAIN,api-futures.kucoin.com
+DOMAIN,api.kucoin.com
+DOMAIN,www.kucoin.com
 DOMAIN-SUFFIX,kucoin.com
 
 # ==================== Gate ====================
 DOMAIN-SUFFIX,gate.com
 DOMAIN-SUFFIX,gate.io
+DOMAIN,api.gateio.ws
+DOMAIN,www.gate.io
 
 # ==================== MEXC ====================
+DOMAIN,api.mexc.com
+DOMAIN,www.mexc.com
 DOMAIN-SUFFIX,mexc.com
 
 # ==================== HTX ====================
+DOMAIN,api.htx.com
+DOMAIN,www.htx.com
 DOMAIN-SUFFIX,htx.com
 
 # ==================== BitMEX ====================
+DOMAIN,api.bitmex.com
+DOMAIN,testnet.bitmex.com
+DOMAIN,www.bitmex.com
 DOMAIN-SUFFIX,bitmex.com
+
+# ==================== BingX ====================
+DOMAIN-SUFFIX,bingx.com
+
+# ==================== CoinEx ====================
+DOMAIN-SUFFIX,coinex.com
+
+# ==================== LBank ====================
+DOMAIN-SUFFIX,lbank.com
+
+# ==================== WhiteBIT ====================
+DOMAIN-SUFFIX,whitebit.com

@@ -20,7 +20,7 @@ DOMAIN-SUFFIX,icmarketszh.com
 # ==================== Exness ====================
 DOMAIN-SUFFIX,exness.com
 DOMAIN-SUFFIX,exness.help
-DOMAIN-SUFFIX,get.exness.help
+DOMAIN,get.exness.help
 DOMAIN-SUFFIX,exnessaffiliates.com
 
 # ==================== Pepperstone ====================
@@ -53,3 +53,30 @@ DOMAIN-SUFFIX,eightcap.com
 
 # ==================== BlackBull Markets ====================
 DOMAIN-SUFFIX,blackbull.com
+
+# ==================== Admiral Markets ====================
+DOMAIN-SUFFIX,admiralmarkets.com
+
+# ==================== Capital.com ====================
+DOMAIN-SUFFIX,capital.com
+
+# ==================== Markets.com ====================
+DOMAIN-SUFFIX,markets.com
+
+# ==================== ThinkMarkets ====================
+DOMAIN-SUFFIX,thinkmarkets.com
+
+# ==================== Moneta Markets ====================
+DOMAIN-SUFFIX,monetamarkets.com
+
+# ==================== AvaTrade ====================
+DOMAIN-SUFFIX,avatrade.com
+
+# ==================== ActivTrades ====================
+DOMAIN-SUFFIX,activtrades.com
+
+# ==================== Global Prime ====================
+DOMAIN-SUFFIX,globalprime.com
+
+# ==================== TMGM ====================
+DOMAIN-SUFFIX,tmgm.com
