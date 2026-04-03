@@ -1,0 +1,27 @@
+# NAME: Google_Proxy
+# AUTHOR: Kevin (kevshen13)
+# REPO: https://github.com/kevshen13/surge-rules
+# DESCRIPTION: Google and Gmail domains that should be routed through proxy
+# UPDATED: 2026-04-04
+# MAINTENANCE: Maintain this list by route behavior under the current network.
+# RULE: Include Google connectivity, static-resource, and Gmail mail-protocol endpoints that should avoid direct routing in your environment.
+# RULE: Keep this list conservative and focused on domains that are known to fail or stall on direct routes.
+
+# ==================== Google connectivity / static ====================
+DOMAIN,connectivitycheck.gstatic.com
+DOMAIN,ssl.gstatic.com
+DOMAIN,www.gstatic.com
+DOMAIN,fonts.googleapis.com
+DOMAIN,fonts.gstatic.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,withgoogle.com
+
+# ==================== Gmail mail protocol ====================
+DOMAIN,imap.gmail.com
+DOMAIN,pop.gmail.com
+DOMAIN,smtp.gmail.com
+DOMAIN,smtp.googlemail.com
+DOMAIN,smtp-relay.gmail.com
+DOMAIN-KEYWORD,gmail-smtp
