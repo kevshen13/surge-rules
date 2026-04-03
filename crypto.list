@@ -1,0 +1,9 @@
+# NAME: Crypto
+# AUTHOR: Kevin (kevshen13)
+# REPO: https://github.com/kevshen13/surge-rules
+# DESCRIPTION: Crypto exchanges and crypto-related services rule list for Surge
+# UPDATED: 2026-04-04
+# MAINTENANCE: Maintain this list by traffic purpose and route behavior.
+# RULE: Include exchanges, wallets, custody services, staking services, and crypto workflow domains.
+# RULE: Keep broad keyword/domain rules conservative to avoid routing unrelated finance or Web3 traffic.
+
