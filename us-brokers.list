@@ -6,9 +6,60 @@
 # MAINTENANCE: Maintain this list by traffic purpose and route behavior.
 # RULE: Include US brokers, US-routed trading venues, and US-specific trading or crypto brokerage services.
 # RULE: Prefer dedicated domains/subdomains and keep broad keyword/domain rules conservative.
+# RULE: When a broker does not publish stable public IP ranges, prefer official gateway and API hostnames over inferred IPs.
 
 # ==================== Kraken ====================
 DOMAIN-SUFFIX,kraken.com
 DOMAIN,api.kraken.com
 DOMAIN,docs.kraken.com
 DOMAIN,support.kraken.com
+
+# ==================== Charles Schwab / thinkorswim ====================
+DOMAIN-SUFFIX,schwab.com
+DOMAIN-SUFFIX,schwabrt.com
+DOMAIN-SUFFIX,thinkorswim.com
+DOMAIN-SUFFIX,tdameritrade.com
+DOMAIN,developer.schwab.com
+DOMAIN,api.schwabapi.com
+IP-CIDR,198.235.0.0/16,no-resolve
+
+# ==================== Interactive Brokers / IBKR ====================
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,ibllc.com
+DOMAIN-SUFFIX,ibllc.com.cn
+DOMAIN,api.ibkr.com
+DOMAIN,gw.interactivebrokers.com
+DOMAIN,ndc1.ibllc.com
+DOMAIN,cdc1.ibllc.com
+DOMAIN,mcgw1.ibllc.com.cn
+DOMAIN,download.interactivebrokers.com
+DOMAIN,download2.interactivebrokers.com
+DOMAIN,pws.interactivebrokers.com
+
+# ==================== FOREX.com / StoneX / City Index ====================
+DOMAIN-SUFFIX,forex.com
+DOMAIN-SUFFIX,gaincapital.com
+DOMAIN-SUFFIX,cityindex.com
+DOMAIN,ciapi.cityindex.com
+DOMAIN,push.cityindex.com
+DOMAIN,docs.labs.gaincapital.com
+IP-CIDR,12.130.150.0/24,no-resolve
+IP-CIDR,63.167.228.0/24,no-resolve
+
+# ==================== OANDA ====================
+DOMAIN-SUFFIX,oanda.com
+DOMAIN-SUFFIX,oanda.net
+DOMAIN-SUFFIX,fxcorporate.com
+DOMAIN,developer.oanda.com
+DOMAIN,api-fxtrade.oanda.com
+DOMAIN,stream-fxtrade.oanda.com
+DOMAIN,api-fxpractice.oanda.com
+DOMAIN,stream-fxpractice.oanda.com
+
+# ==================== AMP Futures ====================
+DOMAIN-SUFFIX,ampfutures.com
+DOMAIN-SUFFIX,ampglobal.com
+DOMAIN-SUFFIX,ampclientportal.com
+# AMP's market data traffic is commonly carried by separate feed vendors
+# such as CQG / Rithmic / TT and should stay in their dedicated rules.
