@@ -6,4 +6,57 @@
 # MAINTENANCE: Maintain this list by traffic purpose and route behavior.
 # RULE: Include exchanges, wallets, custody services, staking services, and crypto workflow domains.
 # RULE: Keep broad keyword/domain rules conservative to avoid routing unrelated finance or Web3 traffic.
+# RULE: Exclude US-specific sites and services from this list.
+# RULE: Put Kraken and other US-only / US-routed crypto brokers into us-brokers.list instead.
 
+# ==================== Binance (Global, exclude Binance.US) ====================
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,bnbdstatic.com
+
+# ==================== OKX (Global, exclude US/EU regional sites) ====================
+DOMAIN,okx.com
+DOMAIN,www.okx.com
+DOMAIN,ws.okx.com
+DOMAIN,wspap.okx.com
+DOMAIN,okx.com.cdn.cloudflare.net
+
+# ==================== Bybit (Global) ====================
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bytick.com
+
+# ==================== Deribit ====================
+DOMAIN-SUFFIX,deribit.com
+DOMAIN,docs.deribit.com
+DOMAIN,support.deribit.com
+
+# ==================== Pionex / 派网 ====================
+DOMAIN-SUFFIX,pionex.com
+DOMAIN,api.pionex.com
+
+# ==================== Polymarket ====================
+DOMAIN-SUFFIX,polymarket.com
+DOMAIN,docs.polymarket.com
+DOMAIN,gamma-api.polymarket.com
+DOMAIN,data-api.polymarket.com
+DOMAIN,clob.polymarket.com
+DOMAIN,bridge.polymarket.com
+
+# ==================== Bitget ====================
+DOMAIN-SUFFIX,bitget.com
+
+# ==================== KuCoin ====================
+DOMAIN-SUFFIX,kucoin.com
+
+# ==================== Gate ====================
+DOMAIN-SUFFIX,gate.com
+DOMAIN-SUFFIX,gate.io
+
+# ==================== MEXC ====================
+DOMAIN-SUFFIX,mexc.com
+
+# ==================== HTX ====================
+DOMAIN-SUFFIX,htx.com
+
+# ==================== BitMEX ====================
+DOMAIN-SUFFIX,bitmex.com
