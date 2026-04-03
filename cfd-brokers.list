@@ -1,6 +1,55 @@
 # NAME: CFD_Brokers
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
-# DESCRIPTION: CFD brokers rule list for Surge
-# UPDATED: 2026-04-03
+# DESCRIPTION: Non-US CFD brokers rule list for Surge
+# UPDATED: 2026-04-04
+# MAINTENANCE: Maintain this list by traffic purpose and route behavior.
+# RULE: Focus on non-US/global CFD brokers and related trading-platform ecosystems.
+# RULE: Prefer official broker domains, client areas, and stable platform domains over broad keywords.
+# RULE: Keep US brokers and US-routed venues in us-brokers.list instead.
 
+# ==================== IC Markets Global ====================
+DOMAIN-SUFFIX,icmarkets.com
+DOMAIN-SUFFIX,icmarkets.eu
+DOMAIN-SUFFIX,icmarkets-zcr.com
+DOMAIN-SUFFIX,ic-chinese-official.com
+DOMAIN-SUFFIX,icmarkets-zhw.com
+DOMAIN-SUFFIX,icmarkets-zcg.com
+DOMAIN-SUFFIX,icmarketszh.com
+
+# ==================== Exness ====================
+DOMAIN-SUFFIX,exness.com
+DOMAIN-SUFFIX,exness.help
+DOMAIN-SUFFIX,get.exness.help
+DOMAIN-SUFFIX,exnessaffiliates.com
+
+# ==================== Pepperstone ====================
+DOMAIN-SUFFIX,pepperstone.com
+
+# ==================== XM Global ====================
+DOMAIN-SUFFIX,xm.com
+DOMAIN,my.xm.com
+
+# ==================== cTrader / Spotware Ecosystem ====================
+DOMAIN-SUFFIX,ctrader.com
+DOMAIN-SUFFIX,spotware.com
+DOMAIN-SUFFIX,ctraderapi.com
+DOMAIN-SUFFIX,duplikium.com
+
+# ==================== FP Markets ====================
+DOMAIN-SUFFIX,fpmarkets.com
+
+# ==================== Tickmill ====================
+DOMAIN-SUFFIX,tickmill.com
+
+# ==================== FxPro ====================
+DOMAIN-SUFFIX,fxpro.com
+
+# ==================== Vantage Markets ====================
+DOMAIN-SUFFIX,vantagemarkets.com
+
+# ==================== Eightcap ====================
+DOMAIN-SUFFIX,eightcap.com
+
+# ==================== BlackBull Markets ====================
+DOMAIN-SUFFIX,blackbull.com
