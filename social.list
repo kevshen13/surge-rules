@@ -1,0 +1,54 @@
+# NAME: Social
+# AUTHOR: Kevin (kevshen13)
+# REPO: https://github.com/kevshen13/surge-rules
+# DESCRIPTION: Custom social services rule list for Surge
+# UPDATED: 2026-04-04
+# MAINTENANCE: Maintain this list by traffic purpose and route behavior.
+# RULE: Include social platforms and related domains that should follow the Social policy group.
+# RULE: Keep DIRECT-only verification or anti-bot domains in the main config if they should not follow Social.
+
+# ==================== Telegram ====================
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telesco.pe
+DOMAIN-SUFFIX,tdesktop.com
+
+# ==================== Discord ====================
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discord.media
+DOMAIN-SUFFIX,discord.design
+DOMAIN-SUFFIX,discordstatus.com
+
+# ==================== X / Twitter ====================
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,periscope.tv
+
+# ==================== Facebook / Meta Social ====================
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,messenger.com
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,ig.me
+DOMAIN-SUFFIX,threads.net
+
+# ==================== GitHub ====================
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,github.community
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,ghcr.io
