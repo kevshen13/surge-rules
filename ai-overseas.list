@@ -1,7 +1,7 @@
 # NAME: AI_Overseas
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
-# DESCRIPTION: Overseas AI services rule list for Surge
+# DESCRIPTION: Overseas AI services and global-route rule list for Surge
 # UPDATED: 2026-04-03
 
 # ==================== OpenAI ====================
@@ -39,7 +39,6 @@ DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,chatgpt
-DOMAIN-KEYWORD,gpt
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-ASN,20473,no-resolve
@@ -63,7 +62,6 @@ DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,apis.google.com
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
@@ -90,18 +88,12 @@ DOMAIN-KEYWORD,metaai
 DOMAIN-KEYWORD,llama
 
 # ==================== MiniMax ====================
-DOMAIN-SUFFIX,minimaxi.com
 DOMAIN-SUFFIX,minimax.io
 DOMAIN-SUFFIX,minimax.chat
-DOMAIN-SUFFIX,agent.minimaxi.com
 DOMAIN-SUFFIX,agent.minimax.io
-DOMAIN-SUFFIX,platform.minimaxi.com
 DOMAIN-SUFFIX,platform.minimax.io
 DOMAIN-SUFFIX,chat.minimax.io
 DOMAIN-SUFFIX,api.minimax.io
-DOMAIN-SUFFIX,hailuoai.com
-DOMAIN-KEYWORD,minimax
-DOMAIN-KEYWORD,hailuo
 
 # ==================== OpenRouter ====================
 DOMAIN-SUFFIX,openrouter.ai
@@ -159,16 +151,8 @@ DOMAIN,console.groq.com
 DOMAIN,api.groq.com
 DOMAIN-KEYWORD,groq
 
-# ==================== DeepSeek ====================
-DOMAIN-SUFFIX,deepseek.com
-DOMAIN,api.deepseek.com
-DOMAIN,chat.deepseek.com
-DOMAIN-KEYWORD,deepseek
-
 # ==================== Coze ====================
 DOMAIN-SUFFIX,coze.com
-DOMAIN-SUFFIX,coze.cn
-DOMAIN-KEYWORD,coze
 
 # ==================== Dify ====================
 DOMAIN-SUFFIX,dify.ai
@@ -176,32 +160,18 @@ DOMAIN-KEYWORD,dify
 
 # ==================== Qwen / Tongyi (Alibaba) ====================
 DOMAIN-SUFFIX,qwen.ai
-DOMAIN-SUFFIX,qwen-tongyi.aliyun.com
-DOMAIN-KEYWORD,qwen
-DOMAIN-KEYWORD,tongyi
 
 # ==================== Moonshot / Kimi ====================
-DOMAIN-SUFFIX,moonshot.cn
-DOMAIN-SUFFIX,moshi.ai
-DOMAIN,api.moonshot.cn
-DOMAIN-KEYWORD,moonshot
-DOMAIN-KEYWORD,kimi
+DOMAIN-SUFFIX,kimi.com
 
-# ==================== Zhipu AI / GLM ====================
-DOMAIN-SUFFIX,zhipuai.cn
-DOMAIN-SUFFIX,bigmodel.cn
-DOMAIN,open.bigmodel.cn
-DOMAIN-KEYWORD,zhipu
-DOMAIN-KEYWORD,glm
+# ==================== Z.AI / GLM ====================
+DOMAIN-SUFFIX,z.ai
 
 # ==================== 01.AI / Yi ====================
 DOMAIN-SUFFIX,01.ai
-DOMAIN-KEYWORD,zerooneai
-DOMAIN-KEYWORD,yi-ai
 
 # ==================== InternLM ====================
 DOMAIN-SUFFIX,internlm.org
-DOMAIN-KEYWORD,internlm
 
 # ==================== Jina AI (Embedding/Rerank) ====================
 DOMAIN-SUFFIX,jina.ai
@@ -209,9 +179,7 @@ DOMAIN-SUFFIX,jina.net
 DOMAIN-KEYWORD,jina
 
 # ==================== SiliconFlow ====================
-DOMAIN-SUFFIX,siliconflow.cn
 DOMAIN-SUFFIX,siliconflow.com
-DOMAIN-KEYWORD,siliconflow
 
 # ==================== Cerebras ====================
 DOMAIN-SUFFIX,cerebras.net
@@ -351,10 +319,6 @@ DOMAIN-KEYWORD,modal
 # ==================== Replit ====================
 DOMAIN-SUFFIX,replit.com
 DOMAIN-KEYWORD,replit
-
-# ==================== GitHub Models ====================
-DOMAIN-SUFFIX,github.com
-DOMAIN-KEYWORD,githubmodels
 
 # ==================== v0 / Vercel AI ====================
 DOMAIN-SUFFIX,v0.dev
