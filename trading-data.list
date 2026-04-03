@@ -7,3 +7,38 @@
 # RULE: Include market data feeds, quote services, historical data endpoints, and data vendor websites used for trading workflows.
 # RULE: Keep broad keyword/domain rules conservative to avoid routing unrelated finance traffic.
 
+# ==================== IQFeed / DTN ====================
+DOMAIN,login.interquote.com
+DOMAIN-SUFFIX,iqfeed.net
+DOMAIN-SUFFIX,interquote.com
+DOMAIN-SUFFIX,dtn.com
+# Official IQFeed FAQ (updated February 24, 2026) lists:
+# 66.112.149.138-150 and 66.112.149.202-225 on ports 60000-60050.
+IP-CIDR,66.112.149.138/31,no-resolve
+IP-CIDR,66.112.149.140/30,no-resolve
+IP-CIDR,66.112.149.144/30,no-resolve
+IP-CIDR,66.112.149.148/31,no-resolve
+IP-CIDR,66.112.149.150/32,no-resolve
+IP-CIDR,66.112.149.202/31,no-resolve
+IP-CIDR,66.112.149.204/30,no-resolve
+IP-CIDR,66.112.149.208/28,no-resolve
+IP-CIDR,66.112.149.224/31,no-resolve
+
+# ==================== CQG ====================
+PROCESS-NAME,CQG Integrated Client
+PROCESS-NAME,CQG Trader
+PROCESS-NAME,QTrader
+DOMAIN-SUFFIX,cqg.com
+DOMAIN-SUFFIX,cqgtrader.com
+# Official CQG technical specifications list destination ports 2823 and 443
+# and the following documented network ranges.
+IP-CIDR,64.208.51.0/24,no-resolve
+IP-CIDR,67.152.7.0/24,no-resolve
+IP-CIDR,114.31.92.64/27,no-resolve
+IP-CIDR,118.201.11.192/26,no-resolve
+IP-CIDR,209.8.147.48/28,no-resolve
+IP-CIDR,203.192.64.128/25,no-resolve
+IP-CIDR,208.48.16.0/24,no-resolve
+IP-CIDR,195.166.124.0/24,no-resolve
+IP-CIDR,211.147.95.128/27,no-resolve
+IP-CIDR,13.126.85.50/32,no-resolve
