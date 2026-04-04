@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: China direct-access services rule list for Surge
-# UPDATED: 2026-04-04
+# UPDATED: 2026-04-05
 # MAINTENANCE: Maintain this list by actual direct-route need.
 # RULE: Only keep services that should stay DIRECT in your current setup.
 # RULE: Prefer official domains, app process names, and stable IP ranges already validated in the live config.
@@ -78,6 +78,17 @@ DOMAIN-SUFFIX,贝锐.com
 IP-CIDR,106.14.0.0/16,no-resolve
 IP-CIDR,114.215.0.0/16,no-resolve
 IP-CIDR,139.196.0.0/16,no-resolve
+
+# ==================== Synology / 群晖 ====================
+# Prefer official CN download / update endpoints as DIRECT.
+# Do not pin CDN IPs here: under Surge enhanced mode they may appear as fake 198.18/16
+# and real edge IPs can change frequently.
+DOMAIN,www.synology.cn
+DOMAIN-SUFFIX,synology.cn
+DOMAIN,cndl.synology.cn
+DOMAIN,autoupdate7.synology.cn
+DOMAIN,global.download.synology.com
+DOMAIN,ddns.synology.com
 
 # ==================== Narwal / 云鲸 ====================
 DOMAIN-SUFFIX,yunjing.cn
