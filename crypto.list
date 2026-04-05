@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Crypto exchanges and crypto-related services rule list for Surge
-# UPDATED: 2026-04-04
+# UPDATED: 2026-04-06
 # MAINTENANCE: Maintain this list by traffic purpose and route behavior.
 # RULE: Include exchanges, wallets, custody services, staking services, and crypto workflow domains.
 # RULE: Keep broad keyword/domain rules conservative to avoid routing unrelated finance or Web3 traffic.
@@ -51,15 +51,6 @@ DOMAIN,www.deribit.com
 DOMAIN-SUFFIX,pionex.com
 DOMAIN,api.pionex.com
 DOMAIN,www.pionex.com
-
-# ==================== Polymarket ====================
-DOMAIN-SUFFIX,polymarket.com
-DOMAIN,www.polymarket.com
-DOMAIN,docs.polymarket.com
-DOMAIN,gamma-api.polymarket.com
-DOMAIN,data-api.polymarket.com
-DOMAIN,clob.polymarket.com
-DOMAIN,bridge.polymarket.com
 
 # ==================== Bitget ====================
 DOMAIN,api.bitget.com
