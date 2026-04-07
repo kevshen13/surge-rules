@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Overseas AI services and global-route rule list for Surge
-# UPDATED: 2026-04-04
+# UPDATED: 2026-04-07
 # MAINTENANCE: Maintain this list by routing path, not by company nationality.
 # RULE: Include domains/endpoints that should go overseas in actual use.
 # RULE: If one vendor has both domestic and overseas versions, split by the actual route target.
@@ -49,7 +49,6 @@ DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claudeapi.com
 DOMAIN-SUFFIX,claudeusercontent.com
-DOMAIN-KEYWORD,claude
 
 # ==================== Google AI / Gemini / Bard ====================
 DOMAIN,ai.google.dev
@@ -112,14 +111,12 @@ DOMAIN-KEYWORD,perplexity
 # ==================== Poe ====================
 DOMAIN,www.poe.com
 DOMAIN-SUFFIX,poe.com
-DOMAIN-KEYWORD,poe
 
 # ==================== Cursor ====================
 DOMAIN,www.cursor.com
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,todesktop.com
-DOMAIN-KEYWORD,cursor
 
 # ==================== Mistral AI ====================
 DOMAIN,api.mistral.ai
@@ -273,12 +270,9 @@ DOMAIN-KEYWORD,descript
 
 # ==================== Notion AI ====================
 DOMAIN-SUFFIX,notion.so
-DOMAIN-SUFFIX,notional.com
-DOMAIN-KEYWORD,notion
 
 # ==================== Canva AI ====================
 DOMAIN-SUFFIX,canva.com
-DOMAIN-KEYWORD,canva
 
 # ==================== Adobe Firefly ====================
 DOMAIN,firefly.adobe.com
@@ -299,7 +293,6 @@ DOMAIN-KEYWORD,ideogram
 
 # ==================== Krea ====================
 DOMAIN-SUFFIX,krea.ai
-DOMAIN-KEYWORD,krea
 
 # ==================== Getimg.ai ====================
 DOMAIN-SUFFIX,getimg.ai
@@ -346,7 +339,6 @@ DOMAIN-KEYWORD,vastai
 
 # ==================== Modal ====================
 DOMAIN-SUFFIX,modal.com
-DOMAIN-KEYWORD,modal
 
 # ==================== Replit ====================
 DOMAIN-SUFFIX,replit.com
@@ -365,7 +357,6 @@ DOMAIN-KEYWORD,lovable
 
 # ==================== Manus ====================
 DOMAIN-SUFFIX,manus.im
-DOMAIN-KEYWORD,manus
 
 # ==================== Devv ====================
 DOMAIN-SUFFIX,devv.ai

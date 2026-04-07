@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Trading applications rule list for Surge
-# UPDATED: 2026-04-04
+# UPDATED: 2026-04-07
 # MAINTENANCE: Maintain this list by trading software and platform usage.
 # RULE: Include charting, execution, order-flow, and analytics platforms that should follow the Trade Platform group.
 # RULE: Keep broker-specific account, auth, and gateway domains in broker-specific lists instead.
@@ -38,7 +38,6 @@ DOMAIN,api.atas.net
 DOMAIN,support.atas.net
 DOMAIN,my.atas.net
 DOMAIN,docs.atas.net
-DOMAIN-KEYWORD,atas
 
 # ==================== Bookmap ====================
 PROCESS-NAME,Bookmap
@@ -47,7 +46,6 @@ DOMAIN,bookmap.com
 DOMAIN,bookmap-data.bookmap.com
 DOMAIN,go.bookmap.com
 DOMAIN,bookmapapp.com
-DOMAIN-KEYWORD,bookmap
 
 # ==================== MultiCharts ====================
 PROCESS-NAME,MultiCharts

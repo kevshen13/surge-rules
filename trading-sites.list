@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Trading-related websites rule list for Surge
-# UPDATED: 2026-04-04
+# UPDATED: 2026-04-07
 # MAINTENANCE: Maintain this list by route behavior and business usage.
 # RULE: Include trading business websites, prop firm portals, help centers, and official web properties that should follow the Trading-sites group.
 # RULE: Prefer official site, help center, signup, and dashboard domains. Keep executable platforms and feed vendors in their own lists.
@@ -61,3 +61,9 @@ DOMAIN-SUFFIX,fundednext.com
 
 # ==================== TradeFundrr ====================
 DOMAIN-SUFFIX,tradefundrr.com
+
+# ==================== UProfit ====================
+DOMAIN-SUFFIX,uprofit.com
+
+# ==================== The Futuris Funded ====================
+DOMAIN-SUFFIX,thefuturisfunded.com

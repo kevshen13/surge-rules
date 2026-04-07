@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Crypto exchanges and crypto-related services rule list for Surge
-# UPDATED: 2026-04-06
+# UPDATED: 2026-04-07
 # MAINTENANCE: Maintain this list by traffic purpose and route behavior.
 # RULE: Include exchanges, wallets, custody services, staking services, and crypto workflow domains.
 # RULE: Keep broad keyword/domain rules conservative to avoid routing unrelated finance or Web3 traffic.
@@ -96,3 +96,7 @@ DOMAIN-SUFFIX,lbank.com
 
 # ==================== WhiteBIT ====================
 DOMAIN-SUFFIX,whitebit.com
+
+# ==================== Market Data ====================
+DOMAIN-SUFFIX,coingecko.com
+DOMAIN-SUFFIX,coinmarketcap.com

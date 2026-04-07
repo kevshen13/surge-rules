@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: US brokers rule list for Surge
-# UPDATED: 2026-04-04
+# UPDATED: 2026-04-07
 # MAINTENANCE: Maintain this list by traffic purpose and route behavior.
 # RULE: Include US brokers, US-routed trading venues, and US-specific trading or crypto brokerage services.
 # RULE: Prefer dedicated domains/subdomains and keep broad keyword/domain rules conservative.
@@ -21,6 +21,7 @@ DOMAIN-SUFFIX,thinkorswim.com
 DOMAIN-SUFFIX,tdameritrade.com
 DOMAIN,developer.schwab.com
 DOMAIN,api.schwabapi.com
+DOMAIN,streamer-api.schwab.com
 DOMAIN,tos.mx
 IP-CIDR,198.235.0.0/16,no-resolve
 

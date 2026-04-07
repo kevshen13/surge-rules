@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Sierra Chart rule list for Surge
-# UPDATED: 2026-04-04
+# UPDATED: 2026-04-07
 # MAINTENANCE: Maintain this list by traffic purpose and route behavior.
 # RULE: Include Sierra Chart platform processes, official domains, and related simulation or download endpoints.
 # RULE: Keep broad keyword rules conservative and only where Sierra Chart consistently relies on them.
@@ -12,6 +12,8 @@ PROCESS-NAME,Sierra Chart
 DOMAIN,www.sierrachart.com
 DOMAIN-SUFFIX,sierrachart.com
 DOMAIN-SUFFIX,sierracharts.com
+DOMAIN,denali.sierrachart.com
+DOMAIN-SUFFIX,dtcprotocol.org
 DOMAIN-KEYWORD,futurestrading
 DOMAIN-KEYWORD,tradesimulation
 

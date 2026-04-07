@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Trading data and market data services rule list for Surge
-# UPDATED: 2026-04-04
+# UPDATED: 2026-04-07
 # MAINTENANCE: Maintain this list by traffic purpose and route behavior.
 # RULE: Include market data feeds, quote services, historical data endpoints, and data vendor websites used for trading workflows.
 # RULE: Keep broad keyword/domain rules conservative to avoid routing unrelated finance traffic.
@@ -45,3 +45,10 @@ IP-CIDR,208.48.16.0/24,no-resolve
 IP-CIDR,195.166.124.0/24,no-resolve
 IP-CIDR,211.147.95.128/27,no-resolve
 IP-CIDR,13.126.85.50/32,no-resolve
+
+# ==================== Trading Technologies (TT) ====================
+DOMAIN-SUFFIX,tradingtechnologies.com
+DOMAIN-SUFFIX,ttnet.com
+DOMAIN,md.tt.trading
+DOMAIN,auth.tt.trading
+DOMAIN-SUFFIX,tt.trading
