@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Overseas AI services and global-route rule list for Surge
-# UPDATED: 2026-04-07
+# UPDATED: 2026-04-15
 # MAINTENANCE: Maintain this list by routing path, not by company nationality.
 # RULE: Include domains/endpoints that should go overseas in actual use.
 # RULE: If one vendor has both domestic and overseas versions, split by the actual route target.
@@ -42,12 +42,20 @@ IP-ASN,20473,no-resolve
 # ==================== Anthropic / Claude ====================
 DOMAIN,api.anthropic.com
 DOMAIN,cdn.usefathom.com
+DOMAIN,docs.claude.com
 DOMAIN,console.anthropic.com
 DOMAIN,docs.anthropic.com
+DOMAIN,platform.claude.com
+DOMAIN,status.claude.com
+DOMAIN,support.claude.com
 DOMAIN,support.anthropic.com
 DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.site
 DOMAIN-SUFFIX,claudeapi.com
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudeusercontent.com
 
 # ==================== Google AI / Gemini / Bard ====================
