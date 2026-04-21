@@ -1,4 +1,4 @@
-# NAME: NT-Tradovate
+# NAME: Ninjatrader
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: NinjaTrader and Tradovate rule list for Surge
@@ -21,4 +21,3 @@ DOMAIN,demo.tradovateapi.com
 DOMAIN,login.tradovate.com
 DOMAIN,md.tradovateapi.com
 DOMAIN,web.tradovate.com
-
