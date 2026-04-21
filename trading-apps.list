@@ -8,23 +8,6 @@
 # RULE: Keep broker-specific account, auth, and gateway domains in broker-specific lists instead.
 # NOTE: thinkorswim / Schwab and IBKR stay in us-brokers.list rather than this app list.
 
-# ==================== NinjaTrader / Tradovate ====================
-PROCESS-NAME,NinjaTrader
-PROCESS-NAME,NinjaTrader 8
-PROCESS-NAME,Tradovate
-DOMAIN-SUFFIX,ninjatrader.com
-DOMAIN-SUFFIX,tradovate.com
-DOMAIN-SUFFIX,tradovateapi.com
-DOMAIN,trader.tradovate.com
-DOMAIN,api.tradovate.com
-DOMAIN,auth.tradovate.com
-DOMAIN,community.tradovate.com
-DOMAIN,live.tradovateapi.com
-DOMAIN,demo.tradovateapi.com
-DOMAIN,login.tradovate.com
-DOMAIN,md.tradovateapi.com
-DOMAIN,web.tradovate.com
-
 # ==================== MotiveWave ====================
 PROCESS-NAME,MotiveWave
 DOMAIN,www.motivewave.com

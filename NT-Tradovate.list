@@ -1,0 +1,24 @@
+# NAME: NT-Tradovate
+# AUTHOR: Kevin (kevshen13)
+# REPO: https://github.com/kevshen13/surge-rules
+# DESCRIPTION: NinjaTrader and Tradovate rule list for Surge
+# UPDATED: 2026-04-22
+# MAINTENANCE: Maintain this list by NinjaTrader/Tradovate account, auth, data, and trading platform usage.
+# RULE: Include NinjaTrader Desktop/Web and Tradovate platform processes, account domains, API hosts, and market data endpoints.
+
+PROCESS-NAME,NinjaTrader
+PROCESS-NAME,NinjaTrader 8
+PROCESS-NAME,Tradovate
+DOMAIN-SUFFIX,ninjatrader.com
+DOMAIN-SUFFIX,tradovate.com
+DOMAIN-SUFFIX,tradovateapi.com
+DOMAIN,trader.tradovate.com
+DOMAIN,api.tradovate.com
+DOMAIN,auth.tradovate.com
+DOMAIN,community.tradovate.com
+DOMAIN,live.tradovateapi.com
+DOMAIN,demo.tradovateapi.com
+DOMAIN,login.tradovate.com
+DOMAIN,md.tradovateapi.com
+DOMAIN,web.tradovate.com
+
