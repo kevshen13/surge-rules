@@ -5,14 +5,19 @@
 # UPDATED: 2026-04-22
 # MAINTENANCE: Maintain this list by NinjaTrader/Tradovate account, auth, data, and trading platform usage.
 # RULE: Include NinjaTrader Desktop/Web and Tradovate platform processes, account domains, API hosts, and market data endpoints.
+# SOURCE: Tradovate/NinjaTrader Partner API docs list production, staging, client, market data, and replay endpoints.
+# SOURCE: NinjaTrader support lists Continuum/CQG live gateways in Chicago, Hong Kong, Singapore, Tokyo, Sydney, and London.
 
 PROCESS-NAME,NinjaTrader
 PROCESS-NAME,NinjaTrader 8
 PROCESS-NAME,Tradovate
 DOMAIN-SUFFIX,ninjatrader.com
+DOMAIN-SUFFIX,ninjatrader.dev
 DOMAIN-SUFFIX,tradovate.com
 DOMAIN-SUFFIX,tradovateapi.com
 DOMAIN,trader.tradovate.com
+DOMAIN,web.ninjatrader.com
+DOMAIN,dashboards.tradovate.com
 DOMAIN,api.tradovate.com
 DOMAIN,auth.tradovate.com
 DOMAIN,community.tradovate.com
@@ -20,4 +25,28 @@ DOMAIN,live.tradovateapi.com
 DOMAIN,demo.tradovateapi.com
 DOMAIN,login.tradovate.com
 DOMAIN,md.tradovateapi.com
+DOMAIN,replay.tradovateapi.com
 DOMAIN,web.tradovate.com
+
+# ==================== Partner API Staging / Development ====================
+DOMAIN,live-api.staging.ninjatrader.dev
+DOMAIN,demo-api.staging.ninjatrader.dev
+DOMAIN,md-api.staging.ninjatrader.dev
+DOMAIN,replay.staging.ninjatrader.dev
+DOMAIN,trader.staging.ninjatrader.dev
+DOMAIN,web.staging.ninjatrader.dev
+DOMAIN,dashboards.staging.ninjatrader.dev
+
+# ==================== NinjaTrader Continuum / CQG Gateways ====================
+DOMAIN,cqgtrader.com
+DOMAIN,europe.cqgtrader.com
+DOMAIN,sng.cqgtrader.com
+DOMAIN,au.cqgtrader.com
+DOMAIN,tokyo.cqgtrader.com
+DOMAIN,api-hongkong.cqg.com
+IP-CIDR,208.48.16.200/32,no-resolve
+IP-CIDR,209.8.147.53/32,no-resolve
+IP-CIDR,216.219.76.110/32,no-resolve
+IP-CIDR,118.201.11.201/32,no-resolve
+IP-CIDR,203.192.64.137/32,no-resolve
+IP-CIDR,114.31.92.73/32,no-resolve

@@ -2,10 +2,11 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Sierra Chart rule list for Surge
-# UPDATED: 2026-04-07
+# UPDATED: 2026-04-22
 # MAINTENANCE: Maintain this list by traffic purpose and route behavior.
 # RULE: Include Sierra Chart platform processes, official domains, and related simulation or download endpoints.
 # RULE: Keep broad keyword rules conservative and only where Sierra Chart consistently relies on them.
+# SOURCE: Sierra Chart docs list official data-service ports, server hostnames, IPs, and Denali regional overrides.
 
 PROCESS-NAME,SierraChart
 PROCESS-NAME,Sierra Chart
@@ -16,4 +17,60 @@ DOMAIN,denali.sierrachart.com
 DOMAIN-SUFFIX,dtcprotocol.org
 DOMAIN-KEYWORD,futurestrading
 DOMAIN-KEYWORD,tradesimulation
+DOMAIN-SUFFIX,ddfplus.com
 
+# ==================== Denali CME Regional Overrides ====================
+# Tokyo for East Asia, Germany for Europe, New Zealand for Asia-Pacific/Oceania.
+DOMAIN,ds45.sierracharts.com
+DOMAIN,ds14-2.sierracharts.com
+DOMAIN,ds40.sierracharts.com
+
+# ==================== Sierra Chart Data / Trading Servers ====================
+DOMAIN,ds3.sierracharts.com
+DOMAIN,ds4.sierracharts.com
+DOMAIN,ds4-2.sierracharts.com
+DOMAIN,ds12.sierracharts.com
+DOMAIN,ds12-2.sierracharts.com
+DOMAIN,ds13.sierracharts.com
+DOMAIN,ds13-2.sierracharts.com
+DOMAIN,ds14.sierracharts.com
+DOMAIN,ds22.sierracharts.com
+DOMAIN,ds23.sierracharts.com
+DOMAIN,ds23-2.sierracharts.com
+DOMAIN,ds24.sierracharts.com
+DOMAIN,ds26.sierracharts.com
+DOMAIN,ds26-2.sierracharts.com
+DOMAIN,ds27.sierracharts.com
+DOMAIN,ds28.sierracharts.com
+DOMAIN,ds28-2.sierracharts.com
+DOMAIN,ds30.sierracharts.com
+DOMAIN,ds30-2.sierracharts.com
+DOMAIN,ds31.sierracharts.com
+DOMAIN,ds32.sierracharts.com
+DOMAIN,ds32-2.sierracharts.com
+DOMAIN,ds01.ddfplus.com
+
+# Official Sierra Chart data-service ports include:
+# realtime 443/10048/10047/10045/10060/10043/10042,
+# historical 80/10149/10150/10159.
+IP-CIDR,4.8.170.26/32,no-resolve
+IP-CIDR,62.209.53.226/32,no-resolve
+IP-CIDR,64.152.155.17/32,no-resolve
+IP-CIDR,64.152.155.18/32,no-resolve
+IP-CIDR,64.152.155.113/32,no-resolve
+IP-CIDR,64.152.155.114/32,no-resolve
+IP-CIDR,64.152.155.115/32,no-resolve
+IP-CIDR,64.152.155.116/32,no-resolve
+IP-CIDR,67.214.125.5/32,no-resolve
+IP-CIDR,67.214.125.6/32,no-resolve
+IP-CIDR,67.214.125.7/32,no-resolve
+IP-CIDR,67.214.125.11/32,no-resolve
+IP-CIDR,69.39.70.241/32,no-resolve
+IP-CIDR,69.39.70.242/32,no-resolve
+IP-CIDR,69.39.70.246/32,no-resolve
+IP-CIDR,69.39.70.248/32,no-resolve
+IP-CIDR,69.39.70.249/32,no-resolve
+IP-CIDR,116.251.186.157/32,no-resolve
+IP-CIDR,176.9.9.252/32,no-resolve
+IP-CIDR,208.185.224.130/32,no-resolve
+IP-CIDR,216.200.108.154/32,no-resolve
