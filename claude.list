@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Claude / Anthropic strict-route rule list for Surge
-# UPDATED: 2026-04-15
+# UPDATED: 2026-04-26
 # MAINTENANCE: Keep this list conservative so it can be used for strict egress policies.
 
 DOMAIN,api.anthropic.com
@@ -13,6 +13,7 @@ DOMAIN,docs.claude.com
 DOMAIN,platform.claude.com
 DOMAIN,status.claude.com
 DOMAIN,support.claude.com
+DOMAIN,cdn.usefathom.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
