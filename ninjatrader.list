@@ -2,11 +2,12 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: NinjaTrader and Tradovate rule list for Surge
-# UPDATED: 2026-04-22
+# UPDATED: 2026-05-16
 # MAINTENANCE: Maintain this list by NinjaTrader/Tradovate account, auth, data, and trading platform usage.
 # RULE: Include NinjaTrader Desktop/Web and Tradovate platform processes, account domains, API hosts, and market data endpoints.
 # SOURCE: Tradovate/NinjaTrader Partner API docs list production, staging, client, market data, and replay endpoints.
 # SOURCE: NinjaTrader support lists Continuum/CQG live gateways in Chicago, Hong Kong, Singapore, Tokyo, Sydney, and London.
+# SOURCE: CQG technical specifications list CQG Trader, IMS, data, and news host suffixes.
 
 PROCESS-NAME,NinjaTrader
 PROCESS-NAME,NinjaTrader 8
@@ -39,6 +40,10 @@ DOMAIN,dashboards.staging.ninjatrader.dev
 
 # ==================== NinjaTrader Continuum / CQG Gateways ====================
 DOMAIN,cqgtrader.com
+DOMAIN-SUFFIX,cqgtrader.com
+DOMAIN-SUFFIX,cqgnet.com
+DOMAIN-SUFFIX,cqgrdnet.com
+DOMAIN-SUFFIX,cqgdata.com
 DOMAIN,europe.cqgtrader.com
 DOMAIN,sng.cqgtrader.com
 DOMAIN,au.cqgtrader.com
