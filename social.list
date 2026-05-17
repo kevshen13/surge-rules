@@ -13,16 +13,22 @@ DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,telegram-cdn.org
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.dog
 DOMAIN-SUFFIX,telegra.ph
 DOMAIN-SUFFIX,telesco.pe
 DOMAIN-SUFFIX,tdesktop.com
 
 # ==================== Discord ====================
 DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discord.co
+DOMAIN-SUFFIX,discord.dev
 DOMAIN-SUFFIX,discordapp.com
 DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,discordcdn.com
 DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discord.gift
 DOMAIN-SUFFIX,discord.media
+DOMAIN-SUFFIX,discord.new
 DOMAIN-SUFFIX,discord.design
 DOMAIN-SUFFIX,discordstatus.com
 
@@ -30,10 +36,12 @@ DOMAIN-SUFFIX,discordstatus.com
 DOMAIN-SUFFIX,tweetdeck.com
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twttr.com
 DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,twitter.co
+DOMAIN-SUFFIX,twitter.jp
 DOMAIN-SUFFIX,twitterinc.com
 DOMAIN-SUFFIX,twitteroauth.com
 DOMAIN-SUFFIX,twitterstat.us
@@ -44,21 +52,33 @@ DOMAIN-SUFFIX,twitpic.com
 
 # ==================== Facebook / Meta Social ====================
 DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fb.gg
 DOMAIN-SUFFIX,fb.watch
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,facebookmail.com
+DOMAIN-SUFFIX,m.me
+DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,metacdn.com
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,igcdn.com
 DOMAIN-SUFFIX,ig.me
+DOMAIN-SUFFIX,threads.com
 DOMAIN-SUFFIX,threads.net
+DOMAIN-SUFFIX,workplace.com
+DOMAIN-SUFFIX,workplacecdn.com
+DOMAIN-SUFFIX,wa.me
 DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,whatsapp.net
 
 # ==================== GitHub ====================
 DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.blog
 DOMAIN-SUFFIX,github.dev
 DOMAIN-SUFFIX,githubapp.com
 DOMAIN-SUFFIX,githubusercontent.com
@@ -75,8 +95,13 @@ DOMAIN-SUFFIX,reddit.com
 DOMAIN-SUFFIX,redd.it
 DOMAIN-SUFFIX,redditmedia.com
 DOMAIN-SUFFIX,redditstatic.com
+DOMAIN-SUFFIX,redditinc.com
 
 # ==================== LINE ====================
+DOMAIN-SUFFIX,lin.ee
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,line-apps.com
+DOMAIN-SUFFIX,line.biz
+DOMAIN-SUFFIX,linecorp.com
+DOMAIN-SUFFIX,line.naver.jp
