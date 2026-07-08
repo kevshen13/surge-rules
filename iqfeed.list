@@ -1,11 +1,12 @@
-# NAME: IQFeed
-# AUTHOR: Kevin (kevshen13)
-# REPO: https://github.com/kevshen13/surge-rules
-# DESCRIPTION: IQFeed / DTN rule list for Surge
-# UPDATED: 2026-05-16
-# MAINTENANCE: Maintain this list by IQFeed login, help, vendor domains, and official data-server IP ranges.
-# RULE: Include IQFeed / DTN market data hosts and IP ranges that must keep stable routing behavior.
-# SOURCE: Official IQFeed FAQ lists login.interquote.com and the 66.112.149.138-150 / 66.112.149.202-225 ranges on ports 60000-60050.
+# ============================================================
+# NAME:    IQFeed / DTN
+# TYPE:    Data Source (market data)
+# REPO:    https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-07-08
+# USED BY: NinjaTrader, SierraChart, ATAS (as a data feed)
+# EXIT:    Route IQFeed to the SAME exit as the platform consuming it.
+# NOTE:    LAN trading PCs proxy through Surge, so PROCESS-NAME does NOT apply to them; DOMAIN/IP rules route it.
+# SOURCE:  Official IQFeed FAQ: login.interquote.com + 66.112.149.138-150 / 66.112.149.202-225 on ports 60000-60050.
 
 DOMAIN,login.interquote.com
 DOMAIN,iqhelp.dtn.com

@@ -1,17 +1,21 @@
-# NAME: Ninjatrader
-# AUTHOR: Kevin (kevshen13)
-# REPO: https://github.com/kevshen13/surge-rules
-# DESCRIPTION: NinjaTrader and Tradovate rule list for Surge
-# UPDATED: 2026-05-16
-# MAINTENANCE: Maintain this list by NinjaTrader/Tradovate account, auth, data, and trading platform usage.
-# RULE: Include NinjaTrader Desktop/Web and Tradovate platform processes, account domains, API hosts, and market data endpoints.
-# SOURCE: Tradovate/NinjaTrader Partner API docs list production, staging, client, market data, and replay endpoints.
-# SOURCE: NinjaTrader support lists Continuum/CQG live gateways in Chicago, Hong Kong, Singapore, Tokyo, Sydney, and London.
-# SOURCE: CQG technical specifications list CQG Trader, IMS, data, and news host suffixes.
+# ============================================================
+# NAME:    NinjaTrader / Tradovate
+# TYPE:    Program (desktop + web trading platform)
+# REPO:    https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-07-08
+# DATA:    NinjaTrader routes market data / orders via Continuum (CQG) or Rithmic
+#          -> CQG rules live in cqg.list, Rithmic rules in rithmic.list. Keep them on the SAME exit as NinjaTrader.
+# NOTE:    LAN trading PCs proxy through Surge, so PROCESS-NAME does NOT apply to them;
+#          the DOMAIN / IP rules below do the routing.
+# SOURCE:  Tradovate/NinjaTrader Partner API docs (production, staging, client, market-data, replay endpoints).
+# ============================================================
 
+# ---- Local-process hints (only effective if NinjaTrader runs on the Surge host itself) ----
 PROCESS-NAME,NinjaTrader
 PROCESS-NAME,NinjaTrader 8
 PROCESS-NAME,Tradovate
+
+# ---- NinjaTrader / Tradovate domains ----
 DOMAIN-SUFFIX,ninjatrader.com
 DOMAIN-SUFFIX,ninjatrader.dev
 DOMAIN-SUFFIX,tradovate.com
@@ -29,7 +33,7 @@ DOMAIN,md.tradovateapi.com
 DOMAIN,replay.tradovateapi.com
 DOMAIN,web.tradovate.com
 
-# ==================== Partner API Staging / Development ====================
+# ---- Partner API staging / development ----
 DOMAIN,live-api.staging.ninjatrader.dev
 DOMAIN,demo-api.staging.ninjatrader.dev
 DOMAIN,md-api.staging.ninjatrader.dev
@@ -38,20 +42,6 @@ DOMAIN,trader.staging.ninjatrader.dev
 DOMAIN,web.staging.ninjatrader.dev
 DOMAIN,dashboards.staging.ninjatrader.dev
 
-# ==================== NinjaTrader Continuum / CQG Gateways ====================
-DOMAIN,cqgtrader.com
-DOMAIN-SUFFIX,cqgtrader.com
-DOMAIN-SUFFIX,cqgnet.com
-DOMAIN-SUFFIX,cqgrdnet.com
-DOMAIN-SUFFIX,cqgdata.com
-DOMAIN,europe.cqgtrader.com
-DOMAIN,sng.cqgtrader.com
-DOMAIN,au.cqgtrader.com
-DOMAIN,tokyo.cqgtrader.com
-DOMAIN,api-hongkong.cqg.com
-IP-CIDR,208.48.16.200/32,no-resolve
-IP-CIDR,209.8.147.53/32,no-resolve
-IP-CIDR,216.219.76.110/32,no-resolve
-IP-CIDR,118.201.11.201/32,no-resolve
-IP-CIDR,203.192.64.137/32,no-resolve
-IP-CIDR,114.31.92.73/32,no-resolve
+# ---- NinjaTrader Continuum data/order gateways run on CQG infrastructure -> moved to cqg.list ----
+
+# ---- ADD NEW NINJATRADER/TRADOVATE RULES BELOW ----

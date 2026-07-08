@@ -1,0 +1,24 @@
+# ============================================================
+# NAME:    ATAS (OrderFlowTrading / OFT.Platform)
+# TYPE:    Program (order-flow trading platform)
+# REPO:    https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-07-08
+# DATA:    ATAS market data / order routing runs over CQG or Rithmic -> see cqg.list / rithmic.list.
+# EXIT:    Put ATAS and its data source (CQG/Rithmic) on the SAME exit/region.
+#          ATAS is the most sensitive to a program/data-source region mismatch (login fails + lag).
+# NOTE:    LAN trading PCs proxy through Surge, so PROCESS-NAME does NOT apply to them;
+#          the DOMAIN-SUFFIX rules below are what actually route ATAS app/license/update traffic.
+#          DOMAIN-SUFFIX covers every sub-host (help./docs./updates./license./www. ...).
+# ============================================================
+
+# ---- ATAS app / license / update / site (suffix = all sub-hosts) ----
+DOMAIN-SUFFIX,atas.net
+DOMAIN-SUFFIX,orderflowtrading.net
+
+# ---- Local-process hints (only effective if ATAS runs on the Surge host itself) ----
+PROCESS-NAME,ATAS
+PROCESS-NAME,ATAS X
+PROCESS-NAME,ATASX
+PROCESS-NAME,OFT.Platform
+
+# ---- ADD NEW ATAS RULES BELOW ----

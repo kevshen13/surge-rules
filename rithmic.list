@@ -1,12 +1,15 @@
-# NAME: Rithmic
-# AUTHOR: Kevin (kevshen13)
-# REPO: https://github.com/kevshen13/surge-rules
-# DESCRIPTION: Rithmic rule list for Surge
-# UPDATED: 2026-04-22
-# MAINTENANCE: Maintain this list by traffic purpose and route behavior.
-# RULE: Include Rithmic platform processes, official domains, gateway hosts, and stable IP ranges used by Rithmic feeds and execution.
-# RULE: Keep vendor-specific IP ranges here when they are already validated in the live config.
-# SOURCE: Rithmic firewall advisory lists official R | Trade Execution Platform IP ranges and required ports.
+# ============================================================
+# NAME:    Rithmic
+# TYPE:    Data Source (market data + trade execution)
+# REPO:    https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-07-08
+# USED BY: NinjaTrader, SierraChart, ATAS
+# EXIT:    Route Rithmic to the SAME exit as the platform using it. Rithmic servers sit in the
+#          CME Aurora (Chicago) data center -> a Chicago / US-East exit is geographically closest.
+# NOTE:    LAN trading PCs proxy through Surge, so PROCESS-NAME does NOT apply to them; DOMAIN/IP rules route it.
+# TODO:    Verify the IP ranges below against the CURRENT official Rithmic firewall advisory before relying on them.
+# SOURCE:  Rithmic firewall advisory (R | Trade Execution Platform IP ranges + required ports).
+# ============================================================
 
 PROCESS-NAME,R Trader
 PROCESS-NAME,R Trader Pro

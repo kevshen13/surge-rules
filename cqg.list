@@ -1,0 +1,37 @@
+# ============================================================
+# NAME:    CQG
+# TYPE:    Data Source (market data + order-routing gateways)
+# REPO:    https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-07-08
+# USED BY: NinjaTrader (Continuum), SierraChart, ATAS
+# EXIT:    Route CQG to the SAME exit as the platform using it (NinjaTrader/ATAS/SierraChart),
+#          otherwise the program and its data feed land in different regions -> login fails / data lag.
+# NOTE:    LAN trading PCs proxy through Surge, so PROCESS-NAME does NOT apply to them.
+#          Routing relies entirely on the DOMAIN / IP rules below.
+# SOURCE:  NinjaTrader Continuum/CQG live gateways sit in Chicago, Hong Kong, Singapore, Tokyo, Sydney, London.
+# SOURCE:  CQG technical specs list CQG Trader / IMS / data / news host suffixes.
+# ============================================================
+
+# ---- CQG host suffixes (cover all sub-hosts, incl. regional gateways) ----
+DOMAIN-SUFFIX,cqg.com
+DOMAIN-SUFFIX,cqgtrader.com
+DOMAIN-SUFFIX,cqgnet.com
+DOMAIN-SUFFIX,cqgrdnet.com
+DOMAIN-SUFFIX,cqgdata.com
+
+# ---- Regional gateways (already covered by the suffixes above; kept for reference) ----
+# europe.cqgtrader.com  (Europe)
+# sng.cqgtrader.com     (Singapore)
+# au.cqgtrader.com      (Australia)
+# tokyo.cqgtrader.com   (Tokyo)
+# api-hongkong.cqg.com  (Hong Kong)
+
+# ---- CQG stable gateway IPs (no-resolve: match by dest IP, skip DNS) ----
+IP-CIDR,208.48.16.200/32,no-resolve
+IP-CIDR,209.8.147.53/32,no-resolve
+IP-CIDR,216.219.76.110/32,no-resolve
+IP-CIDR,118.201.11.201/32,no-resolve
+IP-CIDR,203.192.64.137/32,no-resolve
+IP-CIDR,114.31.92.73/32,no-resolve
+
+# ---- ADD NEW CQG RULES BELOW ----
