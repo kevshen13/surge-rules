@@ -14,14 +14,6 @@ DOMAIN,www.motivewave.com
 DOMAIN-SUFFIX,motivewave.com
 DOMAIN,support.motivewave.com
 
-# ==================== ATAS ====================
-PROCESS-NAME,ATAS
-DOMAIN-SUFFIX,atas.net
-DOMAIN,api.atas.net
-DOMAIN,support.atas.net
-DOMAIN,my.atas.net
-DOMAIN,docs.atas.net
-
 # ==================== Bookmap ====================
 PROCESS-NAME,Bookmap
 DOMAIN-SUFFIX,bookmap.com
@@ -34,7 +26,6 @@ DOMAIN,bookmapapp.com
 PROCESS-NAME,MultiCharts
 PROCESS-NAME,MultiCharts64
 PROCESS-NAME,MultiCharts .NET
-PROCESS-NAME,MultiCharts64 .NET
 DOMAIN-SUFFIX,multicharts.com
 DOMAIN,members.multicharts.com
 DOMAIN,download.multicharts.com
@@ -68,12 +59,6 @@ DOMAIN-SUFFIX,trendspider.com
 DOMAIN,charts.trendspider.com
 DOMAIN,status.trendspider.com
 DOMAIN-KEYWORD,trendspider
-
-# ==================== SpotGamma ====================
-DOMAIN-SUFFIX,spotgamma.com
-DOMAIN,support.spotgamma.com
-DOMAIN,www.spotgamma.com
-DOMAIN-KEYWORD,spotgamma
 
 # ==================== Quantower ====================
 PROCESS-NAME,Quantower
