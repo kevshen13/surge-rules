@@ -26,6 +26,7 @@ DOMAIN,bookmapapp.com
 PROCESS-NAME,MultiCharts
 PROCESS-NAME,MultiCharts64
 PROCESS-NAME,MultiCharts .NET
+PROCESS-NAME,MultiCharts64 .NET
 DOMAIN-SUFFIX,multicharts.com
 DOMAIN,members.multicharts.com
 DOMAIN,download.multicharts.com
