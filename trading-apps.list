@@ -8,19 +8,13 @@
 # RULE: Keep broker-specific account, auth, and gateway domains in broker-specific lists instead.
 # NOTE: thinkorswim / Schwab and IBKR stay in us-brokers.list rather than this app list.
 
-# ==================== MotiveWave ====================
-PROCESS-NAME,MotiveWave
-DOMAIN,www.motivewave.com
-DOMAIN-SUFFIX,motivewave.com
-DOMAIN,support.motivewave.com
-
-# ==================== Bookmap ====================
-PROCESS-NAME,Bookmap
-DOMAIN-SUFFIX,bookmap.com
-DOMAIN,bookmap.com
-DOMAIN,bookmap-data.bookmap.com
-DOMAIN,go.bookmap.com
-DOMAIN,bookmapapp.com
+# ==================== ATAS ====================
+PROCESS-NAME,ATAS
+DOMAIN-SUFFIX,atas.net
+DOMAIN,api.atas.net
+DOMAIN,support.atas.net
+DOMAIN,my.atas.net
+DOMAIN,docs.atas.net
 
 # ==================== MultiCharts ====================
 PROCESS-NAME,MultiCharts
