@@ -1,0 +1,8 @@
+# UPDATED: 2026-11-12
+# ROUTING: DIRECT; includes shared publisher login/CDN services.
+# SOURCES: https://www.farlightgames.com/news/3/ and observed game connections.
+# NOTE: farlightgmes.com is the spelling of the observed IPv6 probe; do not broaden it.
+
+DOMAIN-SUFFIX,farlightgames.com
+DOMAIN,passport-global.lilith.com
+DOMAIN,ipv6.farlightgmes.com

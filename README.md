@@ -39,12 +39,21 @@ All `.list` files use `RULE-SET`. Data-source rules must precede application pro
 | data | Tradovate 数据 | [data/tradovate-data.list](data/tradovate-data.list) | [Provider reference](https://api.tradovate.com/) |
 | data | cTrader 数据 | [data/ctrader-data.list](data/ctrader-data.list) | [Provider reference](https://help.ctrader.com/open-api/proxies-endpoints/) |
 | data | TT 数据 | [data/trading-technologies.list](data/trading-technologies.list) | [Provider reference](https://library.tradingtechnologies.com/trade/overview/tt-desktop/description-tt-desktop/tt-desktop-platform-requirements/) |
+| program | Bookmap | [programs/bookmap.list](programs/bookmap.list) | [Provider reference](https://bookmap.com/) |
+| data | Bookmap 数据 | [data/bookmap-data.list](data/bookmap-data.list) | [Provider reference](https://bookmap.com/en/bmdata) |
 | broker | Pepperstone | [brokers/pepperstone.list](brokers/pepperstone.list) | [Provider reference](https://pepperstone.com/en/support/platforms-and-tools) |
 | broker | IC Markets | [brokers/icmarkets.list](brokers/icmarkets.list) | [Provider reference](https://www.icmarkets.com/global/en/trading-platforms/metatrader-5) |
 | broker | Exness | [brokers/exness.list](brokers/exness.list) | [Provider reference](https://get.exness.help/hc/en-us/articles/360012578619-Trading-account-login-and-server-details) |
 | exchange | Binance | [exchanges/binance.list](exchanges/binance.list) | [Provider reference](https://developers.binance.com/en/docs/products/spot/rest-api) |
 | exchange | OKX | [exchanges/okx.list](exchanges/okx.list) | [Provider reference](https://www.okx.com/docs-v5/en/) |
 | exchange | Bybit | [exchanges/bybit.list](exchanges/bybit.list) | [Provider reference](https://bybit-exchange.github.io/docs/v5/ws/connect) |
+
+## Direct mobile games
+
+- [Clash Royale](games/clash-royale.list): game domains plus shared Supercell login services.
+- [AFK Journey](games/afk-journey.list): Farlight game/CDN/login domains plus observed Lilith passport and IPv6 probe hosts.
+
+Use both with `DIRECT`, before generic proxy rules. Publisher services can be shared by other games; do not route entire AWS, Alibaba or other shared hosting networks directly.
 
 ## Compatibility
 
@@ -55,6 +64,7 @@ The flat filenames remain compatibility aggregates for existing profiles. New co
 - IQFeed: the documented `12.36.218.128/25` range replaces the old `66.112.149.*` rules. The provider still uses `login.interquote.com`.
 - CQG: published ranges and DNS suffixes are included; the provider can change them.
 - Sierra data: server addresses follow the current Sierra Chart connection guide. Data/order services under `sierracharts.com` are separated from the `sierrachart.com` application site.
+- Bookmap: data delivery/authentication, historical data and zoomout hosts observed in connections are separated from website/activation. No complete public streaming IP inventory was found; IP-only endpoints remain subject to runtime verification.
 - Rithmic: existing narrow IP ranges are retained and normalized. A current public official firewall advisory could not be retrieved during this review, so the IP portion is explicitly marked as legacy rather than claimed complete.
 - MT5: broker-specific servers are not identified by MetaQuotes/MQL5 website rules. Pepperstone publishes MT5 endpoints beneath `pepperstone.com`; IC Markets and Exness account-specific IP-only access points require observed connection details. Do not guess shared-cloud IP blocks.
 - cTrader: the data list covers documented `ctraderapi.com` Open API endpoints. Branded desktop clients can use additional access-point names.

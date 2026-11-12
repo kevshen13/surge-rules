@@ -1,0 +1,12 @@
+# NAME: Bookmap data services
+# UPDATED: 2026-11-12
+# SOURCE: https://bookmap.com/en/bmdata
+# SOURCE: https://bookmap.com/knowledgebase/docs/KB-Trading-Simulator-Connection
+# EVIDENCE: delivery authentication, historical-data and zoomout hosts observed in local DNS history.
+# LIMIT: This is not an exhaustive vendor firewall list. IP-only streaming endpoints need runtime verification.
+# ROUTING: Place before programs/bookmap.list. Third-party Rithmic/dxFeed/CQG connections retain their own lists.
+
+DOMAIN-SUFFIX,delivery.bookmap.com
+DOMAIN-SUFFIX,hist.bookmap.com
+DOMAIN-SUFFIX,zoomout.bookmap.com
+DOMAIN,cryptocompare.bookmap.com

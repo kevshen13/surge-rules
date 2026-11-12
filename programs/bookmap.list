@@ -1,0 +1,7 @@
+# NAME: Bookmap program, activation and website
+# UPDATED: 2026-11-12
+# SOURCE: https://bookmap.com/
+# ORDER: data/bookmap-data.list and other provider lists must precede this file.
+# NOTE: No generic java process rule; Bookmap is Java-based and unrelated Java programs must stay independent.
+
+DOMAIN-SUFFIX,bookmap.com
