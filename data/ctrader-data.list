@@ -1,0 +1,11 @@
+# NAME: cTrader 数据
+# TYPE: data
+# REPO: https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-11-12
+# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
+# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
+# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
+# SOURCE: https://help.ctrader.com/open-api/proxies-endpoints/
+# NOTE: Covers documented Open API endpoints. Broker-branded desktop access points may use other hostnames.
+
+DOMAIN-SUFFIX,ctraderapi.com

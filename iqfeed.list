@@ -1,27 +1,12 @@
-# ============================================================
-# NAME:    IQFeed / DTN
-# TYPE:    Data Source (market data)
-# REPO:    https://github.com/kevshen13/surge-rules
-# UPDATED: 2026-07-08
-# USED BY: NinjaTrader, SierraChart, ATAS (as a data feed)
-# EXIT:    Route IQFeed to the SAME exit as the platform consuming it.
-# NOTE:    LAN trading PCs proxy through Surge, so PROCESS-NAME does NOT apply to them; DOMAIN/IP rules route it.
-# SOURCE:  Official IQFeed FAQ: login.interquote.com + 66.112.149.138-150 / 66.112.149.202-225 on ports 60000-60050.
+# NAME: iqfeed (compatibility)
+# UPDATED: 2026-11-12
+# New configurations: use the independent lists under programs/ and data/.
+# App and feed policies are independent; there is no universal same-exit requirement.
+# Place data-source rules before program/process rules.
 
 DOMAIN,login.interquote.com
 DOMAIN,iqhelp.dtn.com
 DOMAIN-SUFFIX,iqfeed.net
 DOMAIN-SUFFIX,interquote.com
-DOMAIN-SUFFIX,dtn.com
-
-# Official IQFeed FAQ lists:
-# 66.112.149.138-150 and 66.112.149.202-225 on ports 60000-60050.
-IP-CIDR,66.112.149.138/31,no-resolve
-IP-CIDR,66.112.149.140/30,no-resolve
-IP-CIDR,66.112.149.144/30,no-resolve
-IP-CIDR,66.112.149.148/31,no-resolve
-IP-CIDR,66.112.149.150/32,no-resolve
-IP-CIDR,66.112.149.202/31,no-resolve
-IP-CIDR,66.112.149.204/30,no-resolve
-IP-CIDR,66.112.149.208/28,no-resolve
-IP-CIDR,66.112.149.224/31,no-resolve
+DOMAIN-SUFFIX,ddfplus.com
+IP-CIDR,12.36.218.128/25,no-resolve

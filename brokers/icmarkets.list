@@ -1,0 +1,12 @@
+# NAME: IC Markets
+# TYPE: broker
+# REPO: https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-11-12
+# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
+# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
+# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
+# SOURCE: https://www.icmarkets.com/global/en/trading-platforms/metatrader-5
+# NOTE: Broker website and domain-based trading endpoints; account-specific IP-only access points require validation from connection records.
+
+DOMAIN-SUFFIX,icmarkets.com
+DOMAIN-SUFFIX,icmarkets.eu

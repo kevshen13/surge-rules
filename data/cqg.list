@@ -1,0 +1,29 @@
+# NAME: CQG
+# TYPE: data
+# REPO: https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-11-12
+# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
+# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
+# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
+# SOURCE: https://help.cqg.com/cqgic/26/Documents/cqgnettechnicalspecifications.htm
+# SOURCE: https://partners.cqg.com/sites/default/files/docs/CQGNETTechSpec.pdf
+# NOTE: Includes market data and order gateways. Published provider ranges can change.
+
+DOMAIN-SUFFIX,cqg.com
+DOMAIN-SUFFIX,cqgtrader.com
+DOMAIN-SUFFIX,cqgnet.com
+DOMAIN-SUFFIX,cqgrdnet.com
+DOMAIN-SUFFIX,cqgdata.com
+IP-CIDR,64.208.51.0/24,no-resolve
+IP-CIDR,67.152.7.0/24,no-resolve
+IP-CIDR,114.31.92.64/27,no-resolve
+IP-CIDR,118.201.11.192/26,no-resolve
+IP-CIDR,209.8.147.48/28,no-resolve
+IP-CIDR,203.192.64.128/25,no-resolve
+IP-CIDR,208.48.16.0/24,no-resolve
+IP-CIDR,195.166.124.0/24,no-resolve
+IP-CIDR,211.147.95.128/27,no-resolve
+IP-CIDR,13.126.85.50/32,no-resolve
+IP-CIDR,8.18.160.0/24,no-resolve
+IP-CIDR,66.77.164.128/26,no-resolve
+IP-CIDR,216.219.76.64/26,no-resolve

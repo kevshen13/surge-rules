@@ -1,0 +1,17 @@
+# NAME: Binance
+# TYPE: exchange
+# REPO: https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-11-12
+# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
+# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
+# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
+# SOURCE: https://developers.binance.com/en/docs/products/spot/rest-api
+# SOURCE: https://developers.binance.me/en/docs/products/spot/faqs/market_data_only
+# NOTE: Includes public-data and futures endpoints; Binance.US remains separate.
+
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binance.vision
+DOMAIN-SUFFIX,binancefuture.com
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bnbdstatic.com

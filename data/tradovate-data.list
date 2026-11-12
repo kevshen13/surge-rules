@@ -1,0 +1,15 @@
+# NAME: Tradovate 数据
+# TYPE: data
+# REPO: https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-11-12
+# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
+# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
+# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
+# SOURCE: https://api.tradovate.com/
+# NOTE: REST authentication, execution and data endpoints share one data policy; the Tradovate website/app policy is separate.
+
+DOMAIN-SUFFIX,tradovateapi.com
+DOMAIN,live-api.staging.ninjatrader.dev
+DOMAIN,demo-api.staging.ninjatrader.dev
+DOMAIN,md-api.staging.ninjatrader.dev
+DOMAIN,replay.staging.ninjatrader.dev

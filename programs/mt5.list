@@ -1,0 +1,17 @@
+# NAME: MT5
+# TYPE: program
+# REPO: https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-11-12
+# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
+# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
+# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
+# SOURCE: https://www.metatrader5.com/en/terminal/help/startworking/settings
+# NOTE: Broker/feed destinations are handled by their own earlier rules; this list is the program/site fallback.
+# NOTE: MetaTrader trading-server host/IP is broker-specific; MetaQuotes/MQL5 domains do not identify every broker connection.
+
+DOMAIN-SUFFIX,metatrader5.com
+DOMAIN-SUFFIX,metaquotes.net
+DOMAIN-SUFFIX,mql5.com
+DOMAIN-SUFFIX,mql5.net
+PROCESS-NAME,MetaTrader 5
+PROCESS-NAME,terminal64.exe

@@ -1,0 +1,17 @@
+# NAME: IQFeed
+# TYPE: data
+# REPO: https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-11-12
+# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
+# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
+# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
+# SOURCE: https://iqhelp.dtn.com/firewall-ip-addresses/
+# SOURCE: https://www.sierrachart.com/index.php?l=doc/helpdetails1.php
+# NOTE: Replaces the old 66.112.149.* rules with the published Chicago range; avoids routing all of dtn.com.
+
+DOMAIN,login.interquote.com
+DOMAIN,iqhelp.dtn.com
+DOMAIN-SUFFIX,iqfeed.net
+DOMAIN-SUFFIX,interquote.com
+DOMAIN-SUFFIX,ddfplus.com
+IP-CIDR,12.36.218.128/25,no-resolve

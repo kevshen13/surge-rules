@@ -1,22 +1,14 @@
-# NAME: Trading_Data
-# AUTHOR: Kevin (kevshen13)
-# REPO: https://github.com/kevshen13/surge-rules
-# DESCRIPTION: Trading data and market data services rule list for Surge
-# UPDATED: 2026-05-16
-# MAINTENANCE: Maintain this list by traffic purpose and route behavior.
-# RULE: Include market data feeds, quote services, historical data endpoints, and data vendor websites used for trading workflows.
-# RULE: Keep broad keyword/domain rules conservative to avoid routing unrelated finance traffic.
+# NAME: trading-data (compatibility)
+# UPDATED: 2026-11-12
+# New configurations: use the independent lists under programs/ and data/.
+# App and feed policies are independent; there is no universal same-exit requirement.
+# Place data-source rules before program/process rules.
 
-# ==================== CQG ====================
-PROCESS-NAME,CQG Integrated Client
-PROCESS-NAME,CQG Trader
-PROCESS-NAME,QTrader
 DOMAIN-SUFFIX,cqg.com
 DOMAIN-SUFFIX,cqgtrader.com
-DOMAIN,help.cqg.com
-DOMAIN,partners.cqg.com
-# Official CQG technical specifications list destination ports 2823 and 443
-# and the following documented network ranges.
+DOMAIN-SUFFIX,cqgnet.com
+DOMAIN-SUFFIX,cqgrdnet.com
+DOMAIN-SUFFIX,cqgdata.com
 IP-CIDR,64.208.51.0/24,no-resolve
 IP-CIDR,67.152.7.0/24,no-resolve
 IP-CIDR,114.31.92.64/27,no-resolve
@@ -27,10 +19,12 @@ IP-CIDR,208.48.16.0/24,no-resolve
 IP-CIDR,195.166.124.0/24,no-resolve
 IP-CIDR,211.147.95.128/27,no-resolve
 IP-CIDR,13.126.85.50/32,no-resolve
-
-# ==================== Trading Technologies (TT) ====================
-DOMAIN-SUFFIX,tradingtechnologies.com
-DOMAIN-SUFFIX,ttnet.com
-DOMAIN,md.tt.trading
-DOMAIN,auth.tt.trading
+IP-CIDR,8.18.160.0/24,no-resolve
+IP-CIDR,66.77.164.128/26,no-resolve
+IP-CIDR,216.219.76.64/26,no-resolve
+DOMAIN-SUFFIX,trade.tt
 DOMAIN-SUFFIX,tt.trading
+DOMAIN-SUFFIX,tradingtechnologies.com
+PROCESS-NAME,CQG Integrated Client
+PROCESS-NAME,CQG Trader
+PROCESS-NAME,QTrader

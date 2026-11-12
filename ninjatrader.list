@@ -1,47 +1,17 @@
-# ============================================================
-# NAME:    NinjaTrader / Tradovate
-# TYPE:    Program (desktop + web trading platform)
-# REPO:    https://github.com/kevshen13/surge-rules
-# UPDATED: 2026-07-08
-# DATA:    NinjaTrader routes market data / orders via Continuum (CQG) or Rithmic
-#          -> CQG rules live in cqg.list, Rithmic rules in rithmic.list. Keep them on the SAME exit as NinjaTrader.
-# NOTE:    LAN trading PCs proxy through Surge, so PROCESS-NAME does NOT apply to them;
-#          the DOMAIN / IP rules below do the routing.
-# SOURCE:  Tradovate/NinjaTrader Partner API docs (production, staging, client, market-data, replay endpoints).
-# ============================================================
+# NAME: ninjatrader (compatibility)
+# UPDATED: 2026-11-12
+# New configurations: use the independent lists under programs/ and data/.
+# App and feed policies are independent; there is no universal same-exit requirement.
+# Place data-source rules before program/process rules.
 
-# ---- Local-process hints (only effective if NinjaTrader runs on the Surge host itself) ----
-PROCESS-NAME,NinjaTrader
-PROCESS-NAME,NinjaTrader 8
-PROCESS-NAME,Tradovate
-
-# ---- NinjaTrader / Tradovate domains ----
 DOMAIN-SUFFIX,ninjatrader.com
 DOMAIN-SUFFIX,ninjatrader.dev
+PROCESS-NAME,NinjaTrader
+PROCESS-NAME,NinjaTrader 8
 DOMAIN-SUFFIX,tradovate.com
+PROCESS-NAME,Tradovate
 DOMAIN-SUFFIX,tradovateapi.com
-DOMAIN,trader.tradovate.com
-DOMAIN,web.ninjatrader.com
-DOMAIN,dashboards.tradovate.com
-DOMAIN,api.tradovate.com
-DOMAIN,auth.tradovate.com
-DOMAIN,community.tradovate.com
-DOMAIN,live.tradovateapi.com
-DOMAIN,demo.tradovateapi.com
-DOMAIN,login.tradovate.com
-DOMAIN,md.tradovateapi.com
-DOMAIN,replay.tradovateapi.com
-DOMAIN,web.tradovate.com
-
-# ---- Partner API staging / development ----
 DOMAIN,live-api.staging.ninjatrader.dev
 DOMAIN,demo-api.staging.ninjatrader.dev
 DOMAIN,md-api.staging.ninjatrader.dev
 DOMAIN,replay.staging.ninjatrader.dev
-DOMAIN,trader.staging.ninjatrader.dev
-DOMAIN,web.staging.ninjatrader.dev
-DOMAIN,dashboards.staging.ninjatrader.dev
-
-# ---- NinjaTrader Continuum data/order gateways run on CQG infrastructure -> moved to cqg.list ----
-
-# ---- ADD NEW NINJATRADER/TRADOVATE RULES BELOW ----

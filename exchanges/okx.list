@@ -1,0 +1,12 @@
+# NAME: OKX
+# TYPE: exchange
+# REPO: https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-11-12
+# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
+# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
+# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
+# SOURCE: https://www.okx.com/docs-v5/en/
+# NOTE: Includes regional subdomains; routing does not determine account region or service eligibility.
+
+DOMAIN-SUFFIX,okx.com
+DOMAIN,okx.com.cdn.cloudflare.net

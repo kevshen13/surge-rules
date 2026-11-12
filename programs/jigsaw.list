@@ -1,0 +1,15 @@
+# NAME: Jigsaw
+# TYPE: program
+# REPO: https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-11-12
+# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
+# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
+# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
+# SOURCE: https://www.jigsawtrading.com/
+# NOTE: Broker/feed destinations are handled by their own earlier rules; this list is the program/site fallback.
+
+DOMAIN-SUFFIX,jigsawtrading.com
+DOMAIN-SUFFIX,journalytix.me
+PROCESS-NAME,daytradr
+PROCESS-NAME,Daytradr
+PROCESS-NAME,Journalytix

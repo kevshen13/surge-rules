@@ -1,0 +1,40 @@
+# NAME: Sierra 数据
+# TYPE: data
+# REPO: https://github.com/kevshen13/surge-rules
+# UPDATED: 2026-11-12
+# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
+# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
+# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
+# SOURCE: https://www.sierrachart.com/index.php?l=doc/helpdetails1.php
+# SOURCE: https://www.sierrachart.com/index.php?page=doc/SierraChartServerSettings.php
+# NOTE: Sierra-operated data/order services (including Denali/Teton) share this policy; third-party feeds keep their own policy.
+# NOTE: DTN daily historical service ds01.ddfplus.com is classified under IQFeed/DTN.
+
+DOMAIN-SUFFIX,sierracharts.com
+DOMAIN,denali.sierrachart.com
+IP-CIDR,64.152.155.113/32,no-resolve
+IP-CIDR,64.152.155.114/32,no-resolve
+IP-CIDR,69.39.70.253/32,no-resolve
+IP-CIDR,69.39.70.254/32,no-resolve
+IP-CIDR,69.39.70.241/32,no-resolve
+IP-CIDR,69.39.70.242/32,no-resolve
+IP-CIDR,176.9.9.252/32,no-resolve
+IP-CIDR,62.209.53.226/32,no-resolve
+IP-CIDR,64.152.155.20/32,no-resolve
+IP-CIDR,64.152.155.21/32,no-resolve
+IP-CIDR,64.152.155.17/32,no-resolve
+IP-CIDR,64.152.155.18/32,no-resolve
+IP-CIDR,216.200.108.154/32,no-resolve
+IP-CIDR,67.214.125.5/32,no-resolve
+IP-CIDR,67.214.125.6/32,no-resolve
+IP-CIDR,67.214.125.11/32,no-resolve
+IP-CIDR,64.152.155.116/32,no-resolve
+IP-CIDR,69.39.70.248/32,no-resolve
+IP-CIDR,69.39.70.249/32,no-resolve
+IP-CIDR,69.39.70.245/32,no-resolve
+IP-CIDR,4.8.175.92/32,no-resolve
+IP-CIDR,116.251.186.157/32,no-resolve
+IP-CIDR,116.251.186.158/32,no-resolve
+IP-CIDR,62.209.53.225/32,no-resolve
+IP-CIDR,4.8.170.26/32,no-resolve
+IP-CIDR,69.39.70.246/32,no-resolve

@@ -1,22 +1,9 @@
-# ============================================================
-# NAME:    Rithmic
-# TYPE:    Data Source (market data + trade execution)
-# REPO:    https://github.com/kevshen13/surge-rules
-# UPDATED: 2026-07-08
-# USED BY: NinjaTrader, SierraChart, ATAS
-# EXIT:    Route Rithmic to the SAME exit as the platform using it. Rithmic servers sit in the
-#          CME Aurora (Chicago) data center -> a Chicago / US-East exit is geographically closest.
-# NOTE:    LAN trading PCs proxy through Surge, so PROCESS-NAME does NOT apply to them; DOMAIN/IP rules route it.
-# TODO:    Verify the IP ranges below against the CURRENT official Rithmic firewall advisory before relying on them.
-# SOURCE:  Rithmic firewall advisory (R | Trade Execution Platform IP ranges + required ports).
-# ============================================================
+# NAME: rithmic (compatibility)
+# UPDATED: 2026-11-12
+# New configurations: use the independent lists under programs/ and data/.
+# App and feed policies are independent; there is no universal same-exit requirement.
+# Place data-source rules before program/process rules.
 
-PROCESS-NAME,R Trader
-PROCESS-NAME,R Trader Pro
-PROCESS-NAME,R | Trader Pro
-PROCESS-NAME,RTraderPro
-PROCESS-NAME,Rithmic Trader
-PROCESS-NAME,Rithmic Trader Pro
 DOMAIN-SUFFIX,rithmic.com
 DOMAIN-SUFFIX,rithmic.net
 DOMAIN-SUFFIX,theomne.com
@@ -24,16 +11,18 @@ DOMAIN-SUFFIX,theomne.net
 DOMAIN,paper.rithmic.com
 DOMAIN,rithmicconnectivity.com
 DOMAIN-SUFFIX,rithmicconnectivity.com
-
-# Official Rithmic firewall advisory ports:
-# TCP 65000/64100/63100/56000/55555/44444 and 40000-42099,
-# UDP 45454.
 IP-CIDR,38.65.202.192/27,no-resolve
 IP-CIDR,38.65.210.64/28,no-resolve
 IP-CIDR,38.79.0.80/28,no-resolve
 IP-CIDR,38.98.144.224/27,no-resolve
-IP-CIDR,128.177.47.161/28,no-resolve
+IP-CIDR,128.177.47.160/28,no-resolve
 IP-CIDR,130.117.187.64/28,no-resolve
-IP-CIDR,184.104.190.17/28,no-resolve
+IP-CIDR,184.104.190.16/28,no-resolve
 IP-CIDR,184.105.22.224/27,no-resolve
 IP-CIDR,216.57.156.160/28,no-resolve
+PROCESS-NAME,R Trader
+PROCESS-NAME,R Trader Pro
+PROCESS-NAME,R | Trader Pro
+PROCESS-NAME,RTraderPro
+PROCESS-NAME,Rithmic Trader
+PROCESS-NAME,Rithmic Trader Pro

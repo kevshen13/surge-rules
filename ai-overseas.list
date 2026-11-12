@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: Overseas AI services and global-route rule list for Surge
-# UPDATED: 2026-04-15
+# UPDATED: 2026-11-12
 # MAINTENANCE: Maintain this list by routing path, not by company nationality.
 # RULE: Include domains/endpoints that should go overseas in actual use.
 # RULE: If one vendor has both domestic and overseas versions, split by the actual route target.
@@ -37,7 +37,6 @@ DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,chatgpt
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
-IP-ASN,20473,no-resolve
 
 # ==================== Google AI / Gemini / Bard ====================
 DOMAIN,ai.google.dev
@@ -54,7 +53,6 @@ DOMAIN,proactivebackend-pa.googleapis.com
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
-DOMAIN-KEYWORD,gemini
 DOMAIN-KEYWORD,bard
 
 # ==================== Grok / xAI ====================
@@ -370,4 +368,6 @@ DOMAIN-SUFFIX,you.com
 DOMAIN-KEYWORD,youcom
 
 # ==================== Llama.cpp (for reference) ====================
-DOMAIN-SUFFIX,llama.cpp
+
+# AUDIT: Gemini uses explicit Google hostnames; no keyword match on the unrelated Gemini exchange.
+# AUDIT: Removed whole-hosting-ASN match and non-domain project name llama.cpp.

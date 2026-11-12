@@ -1,77 +1,39 @@
-# ============================================================
-# NAME:    SierraChart
-# TYPE:    Program (charting/trading platform + Denali data feed)
-# REPO:    https://github.com/kevshen13/surge-rules
-# UPDATED: 2026-07-08
-# DATA:    Own Denali feed (rules here); or CQG / Rithmic for data/order routing -> see cqg.list / rithmic.list.
-#          Keep SierraChart and its chosen data source on the SAME exit/region.
-# NOTE:    LAN trading PCs proxy through Surge, so PROCESS-NAME does NOT apply to them; DOMAIN/IP rules route it.
-# SOURCE:  Sierra Chart docs (data-service ports, server hostnames, IPs, Denali regional overrides).
-# ============================================================
+# NAME: sierrachart (compatibility)
+# UPDATED: 2026-11-12
+# New configurations: use the independent lists under programs/ and data/.
+# App and feed policies are independent; there is no universal same-exit requirement.
+# Place data-source rules before program/process rules.
 
+DOMAIN-SUFFIX,sierrachart.com
+DOMAIN-SUFFIX,dtcprotocol.org
 PROCESS-NAME,SierraChart
 PROCESS-NAME,Sierra Chart
-DOMAIN,www.sierrachart.com
-DOMAIN-SUFFIX,sierrachart.com
 DOMAIN-SUFFIX,sierracharts.com
 DOMAIN,denali.sierrachart.com
-DOMAIN-SUFFIX,dtcprotocol.org
-DOMAIN-KEYWORD,futurestrading
-DOMAIN-KEYWORD,tradesimulation
-DOMAIN-SUFFIX,ddfplus.com
-
-# ==================== Denali CME Regional Overrides ====================
-# Tokyo for East Asia, Germany for Europe, New Zealand for Asia-Pacific/Oceania.
-DOMAIN,ds45.sierracharts.com
-DOMAIN,ds14-2.sierracharts.com
-DOMAIN,ds40.sierracharts.com
-
-# ==================== Sierra Chart Data / Trading Servers ====================
-DOMAIN,ds3.sierracharts.com
-DOMAIN,ds4.sierracharts.com
-DOMAIN,ds4-2.sierracharts.com
-DOMAIN,ds12.sierracharts.com
-DOMAIN,ds12-2.sierracharts.com
-DOMAIN,ds13.sierracharts.com
-DOMAIN,ds13-2.sierracharts.com
-DOMAIN,ds14.sierracharts.com
-DOMAIN,ds22.sierracharts.com
-DOMAIN,ds23.sierracharts.com
-DOMAIN,ds23-2.sierracharts.com
-DOMAIN,ds24.sierracharts.com
-DOMAIN,ds26.sierracharts.com
-DOMAIN,ds26-2.sierracharts.com
-DOMAIN,ds27.sierracharts.com
-DOMAIN,ds28.sierracharts.com
-DOMAIN,ds28-2.sierracharts.com
-DOMAIN,ds30.sierracharts.com
-DOMAIN,ds30-2.sierracharts.com
-DOMAIN,ds31.sierracharts.com
-DOMAIN,ds32.sierracharts.com
-DOMAIN,ds32-2.sierracharts.com
-DOMAIN,ds01.ddfplus.com
-
-# Official Sierra Chart data-service ports include:
-# realtime 443/10048/10047/10045/10060/10043/10042,
-# historical 80/10149/10150/10159.
-IP-CIDR,4.8.170.26/32,no-resolve
-IP-CIDR,62.209.53.226/32,no-resolve
-IP-CIDR,64.152.155.17/32,no-resolve
-IP-CIDR,64.152.155.18/32,no-resolve
 IP-CIDR,64.152.155.113/32,no-resolve
 IP-CIDR,64.152.155.114/32,no-resolve
-IP-CIDR,64.152.155.115/32,no-resolve
-IP-CIDR,64.152.155.116/32,no-resolve
-IP-CIDR,67.214.125.5/32,no-resolve
-IP-CIDR,67.214.125.6/32,no-resolve
-IP-CIDR,67.214.125.7/32,no-resolve
-IP-CIDR,67.214.125.11/32,no-resolve
+IP-CIDR,69.39.70.253/32,no-resolve
+IP-CIDR,69.39.70.254/32,no-resolve
 IP-CIDR,69.39.70.241/32,no-resolve
 IP-CIDR,69.39.70.242/32,no-resolve
-IP-CIDR,69.39.70.246/32,no-resolve
+IP-CIDR,176.9.9.252/32,no-resolve
+IP-CIDR,62.209.53.226/32,no-resolve
+IP-CIDR,64.152.155.20/32,no-resolve
+IP-CIDR,64.152.155.21/32,no-resolve
+IP-CIDR,64.152.155.17/32,no-resolve
+IP-CIDR,64.152.155.18/32,no-resolve
+IP-CIDR,216.200.108.154/32,no-resolve
+IP-CIDR,67.214.125.5/32,no-resolve
+IP-CIDR,67.214.125.6/32,no-resolve
+IP-CIDR,67.214.125.11/32,no-resolve
+IP-CIDR,64.152.155.116/32,no-resolve
 IP-CIDR,69.39.70.248/32,no-resolve
 IP-CIDR,69.39.70.249/32,no-resolve
+IP-CIDR,69.39.70.245/32,no-resolve
+IP-CIDR,4.8.175.92/32,no-resolve
 IP-CIDR,116.251.186.157/32,no-resolve
-IP-CIDR,176.9.9.252/32,no-resolve
-IP-CIDR,208.185.224.130/32,no-resolve
-IP-CIDR,216.200.108.154/32,no-resolve
+IP-CIDR,116.251.186.158/32,no-resolve
+IP-CIDR,62.209.53.225/32,no-resolve
+IP-CIDR,4.8.170.26/32,no-resolve
+IP-CIDR,69.39.70.246/32,no-resolve
+DOMAIN-SUFFIX,ddfplus.com
