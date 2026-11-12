@@ -1,3 +1,4 @@
+# REVIEW 2026-11-12: use explicit domains; unbounded product keywords removed.
 # NAME: AI_Overseas
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
@@ -33,8 +34,6 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,chatgpt
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 
@@ -50,31 +49,21 @@ DOMAIN,makersuite.google.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN,proactivebackend-pa.googleapis.com
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,developerprofiles
-DOMAIN-KEYWORD,generativelanguage
-DOMAIN-KEYWORD,bard
 
 # ==================== Grok / xAI ====================
 DOMAIN,api.x.ai
 DOMAIN,console.x.ai
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
-DOMAIN-KEYWORD,grok
-DOMAIN-KEYWORD,xai
 
 # ==================== Microsoft Copilot / GitHub Copilot ====================
 DOMAIN,copilot.microsoft.com
 DOMAIN,copilot.github.com
 DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-KEYWORD,copilot
-DOMAIN-KEYWORD,bingcopilot
 
 # ==================== Meta AI / Llama ====================
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,llama.ai
-DOMAIN-KEYWORD,metaai
-DOMAIN-KEYWORD,llama
 
 # ==================== MiniMax ====================
 DOMAIN-SUFFIX,minimax.io
@@ -87,13 +76,11 @@ DOMAIN,api.minimax.io
 # ==================== OpenRouter ====================
 DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,openrouter.net
-DOMAIN-KEYWORD,openrouter
 
 # ==================== Perplexity ====================
 DOMAIN,api.perplexity.ai
 DOMAIN,www.perplexity.ai
 DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-KEYWORD,perplexity
 
 # ==================== Poe ====================
 DOMAIN,www.poe.com
@@ -112,7 +99,6 @@ DOMAIN-SUFFIX,mistralcdn.com
 DOMAIN,chat.mistral.ai
 DOMAIN,console.mistral.ai
 DOMAIN,docs.mistral.ai
-DOMAIN-KEYWORD,mistral
 
 # ==================== Cohere (Embedding/Rerank) ====================
 DOMAIN,api.cohere.ai
@@ -120,7 +106,6 @@ DOMAIN,dashboard.cohere.com
 DOMAIN,docs.cohere.com
 DOMAIN-SUFFIX,cohere.ai
 DOMAIN-SUFFIX,cohere.com
-DOMAIN-KEYWORD,cohere
 
 # ==================== Hugging Face ====================
 DOMAIN,api-inference.huggingface.co
@@ -129,32 +114,26 @@ DOMAIN-SUFFIX,hf.co
 DOMAIN-SUFFIX,hf.space
 DOMAIN,datasets.huggingface.co
 DOMAIN,models.huggingface.co
-DOMAIN-KEYWORD,huggingface
-DOMAIN-KEYWORD,transformers
 
 # ==================== Replicate ====================
 DOMAIN,api.replicate.com
-DOMAIN,replicate.delivery
+DOMAIN-SUFFIX,replicate.delivery
 DOMAIN-SUFFIX,replicate.com
-DOMAIN-KEYWORD,replicate
 
 # ==================== Together AI ====================
 DOMAIN,api.together.xyz
 DOMAIN,docs.together.ai
 DOMAIN-SUFFIX,together.ai
-DOMAIN-KEYWORD,togetherai
 
 # ==================== Fireworks AI ====================
 DOMAIN,api.fireworks.ai
 DOMAIN,docs.fireworks.ai
 DOMAIN-SUFFIX,fireworks.ai
-DOMAIN-KEYWORD,fireworks
 
 # ==================== Groq ====================
 DOMAIN-SUFFIX,groq.com
 DOMAIN,console.groq.com
 DOMAIN,api.groq.com
-DOMAIN-KEYWORD,groq
 
 # ==================== Coze ====================
 DOMAIN-SUFFIX,coze.com
@@ -163,7 +142,6 @@ DOMAIN-SUFFIX,coze.com
 DOMAIN,cloud.dify.ai
 DOMAIN,docs.dify.ai
 DOMAIN-SUFFIX,dify.ai
-DOMAIN-KEYWORD,dify
 
 # ==================== Qwen / Tongyi (Alibaba) ====================
 DOMAIN,www.qwen.ai
@@ -188,7 +166,6 @@ DOMAIN,api.jina.ai
 DOMAIN,docs.jina.ai
 DOMAIN-SUFFIX,jina.ai
 DOMAIN-SUFFIX,jina.net
-DOMAIN-KEYWORD,jina
 
 # ==================== SiliconFlow ====================
 DOMAIN,api.siliconflow.com
@@ -199,61 +176,49 @@ DOMAIN-SUFFIX,siliconflow.com
 DOMAIN,cloud.cerebras.ai
 DOMAIN,inference.cerebras.ai
 DOMAIN-SUFFIX,cerebras.net
-DOMAIN-KEYWORD,cerebras
 
 # ==================== Character.AI ====================
 DOMAIN-SUFFIX,character.ai
-DOMAIN-KEYWORD,characterai
 
 # ==================== Pi / Inflection ====================
 DOMAIN-SUFFIX,pi.ai
-DOMAIN-KEYWORD,inflection
 
 # ==================== Stability AI ====================
 DOMAIN,api.stability.ai
 DOMAIN,platform.stability.ai
 DOMAIN-SUFFIX,stability.ai
-DOMAIN-KEYWORD,stabilityai
 
 # ==================== Midjourney ====================
 DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,mj.gallery
 DOMAIN,cdn.midjourney.com
-DOMAIN-KEYWORD,midjourney
 
 # ==================== Leonardo.ai ====================
 DOMAIN-SUFFIX,leonardo.ai
-DOMAIN-KEYWORD,leonardoai
 
 # ==================== Runway ====================
 DOMAIN,app.runwayml.com
 DOMAIN-SUFFIX,runwayml.com
-DOMAIN-KEYWORD,runway
 
 # ==================== Pika ====================
 DOMAIN-SUFFIX,pika.ai
-DOMAIN-KEYWORD,pikalabs
 
 # ==================== HeyGen ====================
 DOMAIN-SUFFIX,heygen.com
-DOMAIN-KEYWORD,heygen
 
 # ==================== D-ID ====================
 DOMAIN-SUFFIX,d-id.com
 
 # ==================== Synthesia ====================
 DOMAIN-SUFFIX,synthesia.io
-DOMAIN-KEYWORD,synthesia
 
 # ==================== ElevenLabs ====================
 DOMAIN,api.elevenlabs.io
 DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,elevenlabs.com
-DOMAIN-KEYWORD,elevenlabs
 
 # ==================== Descript ====================
 DOMAIN-SUFFIX,descript.com
-DOMAIN-KEYWORD,descript
 
 # ==================== Notion AI ====================
 DOMAIN-SUFFIX,notion.so
@@ -263,111 +228,89 @@ DOMAIN-SUFFIX,canva.com
 
 # ==================== Adobe Firefly ====================
 DOMAIN,firefly.adobe.com
-DOMAIN-KEYWORD,firefly
-DOMAIN-KEYWORD,adobeai
 
 # ==================== Civitai (Stable Diffusion) ====================
 DOMAIN-SUFFIX,civitai.com
-DOMAIN-KEYWORD,civitai
 
 # ==================== Tensor.Art ====================
 DOMAIN-SUFFIX,tensor.art
-DOMAIN-KEYWORD,tensorart
 
 # ==================== Ideogram ====================
 DOMAIN-SUFFIX,ideogram.ai
-DOMAIN-KEYWORD,ideogram
 
 # ==================== Krea ====================
 DOMAIN-SUFFIX,krea.ai
 
 # ==================== Getimg.ai ====================
 DOMAIN-SUFFIX,getimg.ai
-DOMAIN-KEYWORD,getimg
 
 # ==================== NovelAI ====================
 DOMAIN-SUFFIX,novelai.net
-DOMAIN-KEYWORD,novelai
 
 # ==================== Playground AI ====================
 DOMAIN-SUFFIX,playground.ai
-DOMAIN-KEYWORD,playgroundai
 
 # ==================== ChatPDF ====================
 DOMAIN-SUFFIX,chatpdf.com
-DOMAIN-KEYWORD,chatpdf
 
 # ==================== Humata ====================
 DOMAIN-SUFFIX,humata.ai
-DOMAIN-KEYWORD,humata
 
 # ==================== Papers with Code ====================
 DOMAIN-SUFFIX,paperswithcode.com
-DOMAIN-KEYWORD,paperswithcode
 
 # ==================== LangChain ====================
 DOMAIN-SUFFIX,langchain.com
 DOMAIN,python.langchain.com
-DOMAIN-KEYWORD,langchain
 
 # ==================== AutoGPT / Agent ====================
 DOMAIN-SUFFIX,autogpt.net
 DOMAIN-SUFFIX,agpt.co
-DOMAIN-KEYWORD,autogpt
-DOMAIN-KEYWORD,autogpt-dev
 
 # ==================== Lambda Labs ====================
 DOMAIN-SUFFIX,lambdalabs.com
-DOMAIN-KEYWORD,lambdalabs
 
 # ==================== Vast.ai ====================
 DOMAIN-SUFFIX,vast.ai
-DOMAIN-KEYWORD,vastai
 
 # ==================== Modal ====================
 DOMAIN-SUFFIX,modal.com
 
 # ==================== Replit ====================
 DOMAIN-SUFFIX,replit.com
-DOMAIN-KEYWORD,replit
 
 # ==================== v0 / Vercel AI ====================
 DOMAIN-SUFFIX,v0.dev
 
 # ==================== Bolt ====================
 DOMAIN-SUFFIX,bolt.new
-DOMAIN-KEYWORD,boltnew
 
 # ==================== Lovable ====================
 DOMAIN-SUFFIX,lovable.dev
-DOMAIN-KEYWORD,lovable
 
 # ==================== Manus ====================
 DOMAIN-SUFFIX,manus.im
 
 # ==================== Devv ====================
 DOMAIN-SUFFIX,devv.ai
-DOMAIN-KEYWORD,devv
 
 # ==================== Flowith ====================
 DOMAIN-SUFFIX,flowith.net
-DOMAIN-KEYWORD,flowith
 
 # ==================== Sourcegraph / Blox ====================
 DOMAIN-SUFFIX,sourcegraph.com
 DOMAIN-SUFFIX,bloop.ai
-DOMAIN-KEYWORD,sourcegraph
-DOMAIN-KEYWORD,bloop
 
 # ==================== Phind ====================
 DOMAIN-SUFFIX,phind.com
-DOMAIN-KEYWORD,phind
 
 # ==================== You.com ====================
 DOMAIN-SUFFIX,you.com
-DOMAIN-KEYWORD,youcom
 
 # ==================== Llama.cpp (for reference) ====================
 
 # AUDIT: Gemini uses explicit Google hostnames; no keyword match on the unrelated Gemini exchange.
 # AUDIT: Removed whole-hosting-ASN match and non-domain project name llama.cpp.
+
+# Explicit Colab endpoint replaces the ambiguous colab keyword.
+DOMAIN,colab.research.google.com

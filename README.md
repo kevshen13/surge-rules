@@ -74,7 +74,7 @@ The flat filenames remain compatibility aggregates for existing profiles. New co
 
 ## Rule-maintenance decisions
 
-- Removed the broad `gemini` AI keyword that also matched the Gemini exchange.
+- Removed unbounded AI product keywords (including `gemini`, which also matched the Gemini exchange); explicit service domains remain. Replicate output subdomains are covered by `replicate.delivery`.
 - Removed a whole hosting-provider ASN from the AI list and the non-domain project name `llama.cpp`.
 - Existing broker mirrors and unrelated legacy lists were not expanded without a provider reference.
 - Public lists contain service domains and provider ranges only; never commit account credentials, subscription URLs, or a full personal Surge profile.
@@ -83,7 +83,7 @@ The flat filenames remain compatibility aggregates for existing profiles. New co
 
 For blackmatrix7 Apple, AdvertisingLite and GlobalMedia, use the complete `_All_No_Resolve.list` variants supported by current Surge. The short `.list` files omit domain entries and need their companion domain list. [Author instructions](https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Apple/README.md).
 
-Put dedicated Google FCM rules before generic Google rules, and Spotify before GlobalMedia. An all-non-CN-TLD proxy list is unnecessary when explicit proxy rules, domestic IP classification and a final proxy fallback already exist.
+Use [daily/google-fcm.list](daily/google-fcm.list) for current documented Firebase messaging hosts, before generic Google rules; avoid legacy Google-wide IP assignments. Keep Spotify before GlobalMedia. An all-non-CN-TLD proxy list is unnecessary when explicit proxy rules, domestic IP classification and a final proxy fallback already exist.
 
 ## Example
 
