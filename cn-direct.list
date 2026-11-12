@@ -2,7 +2,7 @@
 # AUTHOR: Kevin (kevshen13)
 # REPO: https://github.com/kevshen13/surge-rules
 # DESCRIPTION: China direct-access services rule list for Surge
-# UPDATED: 2026-04-05
+# UPDATED: 2026-11-12
 # MAINTENANCE: Maintain this list by actual direct-route need.
 # RULE: Only keep services that should stay DIRECT in your current setup.
 # RULE: Prefer official domains, app process names, and stable IP ranges already validated in the live config.
@@ -51,6 +51,13 @@ IP-CIDR,111.30.160.0/20,no-resolve
 IP-CIDR,112.53.11.0/24,no-resolve
 IP-CIDR,112.53.20.0/24,no-resolve
 IP-ASN,132203,no-resolve
+
+# Web WeChat alternate endpoints and observed configuration/payment hosts.
+DOMAIN-SUFFIX,wx2.qq.com
+DOMAIN-SUFFIX,wx8.qq.com
+DOMAIN-SUFFIX,weixin.qq.com.cn
+DOMAIN-SUFFIX,wechatpay.cn
+DOMAIN,weixinconf.qq.com
 
 # ==================== Apple APNs ====================
 # Apple Support says APNs devices should ideally reach 17.0.0.0/8.
@@ -111,6 +118,30 @@ DOMAIN-SUFFIX,fengkongcloud.com
 DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xhscdn.net
 DOMAIN-SUFFIX,xiaohongshu.com
+
+# Official Xiaohongshu web destination and share links.
+DOMAIN-SUFFIX,rednote.com
+DOMAIN-SUFFIX,xhslink.com
+
+# ==================== Taobao / Tmall ====================
+# Shopping pages, app APIs and image/static assets; excludes general-purpose cloud hosting.
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,tbcdn.cn
+DOMAIN-SUFFIX,taobaocdn.com
+
+# ==================== JingDong ====================
+# Shopping APIs, images and JD-operated short links.
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,jd.cn
+DOMAIN-SUFFIX,jd.com.cn
+DOMAIN-SUFFIX,360buy.com
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,jdcdn.com
+DOMAIN-SUFFIX,jdcache.com
+DOMAIN-SUFFIX,3.cn
+DOMAIN-SUFFIX,jingdong.com
 
 # ==================== iQIYI ====================
 PROCESS-NAME,com.qiyi.video
