@@ -1,16 +1,10 @@
-# NAME: ATAS
-# TYPE: program
-# REPO: https://github.com/kevshen13/surge-rules
+# NAME: ATAS website, updates and other web services
 # UPDATED: 2026-11-12
-# ROUTING: Choose an independent policy for each list; app and feed exits need not match.
-# ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
-# GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
-# SOURCE: https://atas.net/connections/
-# NOTE: Broker/feed destinations are handled by their own earlier rules; this list is the program/site fallback.
+# SOURCE: https://atas.net/
+# ROUTING: Proxy; this file is NOT an authentication-only DIRECT list.
+# ORDER: programs/atas-auth.list must precede this list.
+# SCOPE: Website/help, updates.orderflowtrading.net, cfg/config, and other web destinations.
+# No PROCESS-NAME catch-all: data providers and licensing have independent rules.
 
 DOMAIN-SUFFIX,atas.net
 DOMAIN-SUFFIX,orderflowtrading.net
-PROCESS-NAME,ATAS
-PROCESS-NAME,ATAS X
-PROCESS-NAME,ATASX
-PROCESS-NAME,OFT.Platform

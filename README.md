@@ -6,7 +6,7 @@ The trading lists are divided by destination service. Applications and their mar
 
 ## Integration order
 
-1. LAN rules and intentional per-device exceptions.
+1. LAN rules and intentional per-device exceptions; ATAS authentication exceptions before its general website list.
 2. `data/`, `brokers/`, and `exchanges/` destination rules.
 3. `programs/` domain and process rules.
 4. Other service rules, domestic direct routing, and a final daily fallback.
@@ -17,7 +17,8 @@ All `.list` files use `RULE-SET`. Data-source rules must precede application pro
 
 | Type | Service | File | Reference |
 | --- | --- | --- | --- |
-| program | ATAS | [programs/atas.list](programs/atas.list) | [Provider reference](https://atas.net/connections/) |
+| program | ATAS websites/updates (proxy) | [programs/atas.list](programs/atas.list) | [Provider reference](https://atas.net/connections/) |
+| authentication | ATAS login/platform session (direct) | [programs/atas-auth.list](programs/atas-auth.list) | [Provider reference](https://help.atas.net/en/support/solutions/articles/72000602319-authorization-window-and-platform-version-selection) |
 | program | Ninjatrader | [programs/ninjatrader.list](programs/ninjatrader.list) | [Provider reference](https://developer.ninjatrader.com/) |
 | program | Tradovate | [programs/tradovate.list](programs/tradovate.list) | [Provider reference](https://api.tradovate.com/) |
 | program | SierraChart | [programs/sierrachart.list](programs/sierrachart.list) | [Provider reference](https://www.sierrachart.com/index.php?l=doc/helpdetails1.php) |
@@ -59,6 +60,14 @@ Use both with `DIRECT`, before generic proxy rules. Publisher services can be sh
 
 The flat filenames remain compatibility aggregates for existing profiles. New configurations should use the individual files above. Existing flat URLs are not a substitute for independently selectable groups.
 
+## ATAS authentication versus updates
+
+Use `programs/atas-auth.list` with DIRECT (or a dedicated authentication selector), before `programs/atas.list` with a proxy policy. The four current F2/E2/T2/R2 IP addresses are matched only on TCP destination port 6450; `id.atas.net` handles account authentication. The observed update host is `updates.orderflowtrading.net`.
+
+Do not send the entire `atas.net` / `orderflowtrading.net` namespace or an entire ATAS process DIRECT to achieve a shared login exit. Old `atas.list` compatibility references and old inline suffix/process rules remain broad and need migration to this pair. Optional `sntp.atas.net` UDP/123 direct routing is a separate clock-sync exception.
+
+The platform server connection may also carry demo/crypto services or other platform data. Domain/port rules cannot split authentication and payload within one encrypted connection. A shared exit does not by itself prove permission for simultaneous sessions; account entitlements remain vendor-controlled.
+
 ## Verification and limits
 
 - IQFeed: the documented `12.36.218.128/25` range replaces the old `66.112.149.*` rules. The provider still uses `login.interquote.com`.
@@ -91,7 +100,8 @@ Use [daily/google-fcm.list](daily/google-fcm.list) for current documented Fireba
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/kevshen13/surge-rules/main/data/cqg.list,CQG,no-resolve
 RULE-SET,https://raw.githubusercontent.com/kevshen13/surge-rules/main/data/rithmic.list,Rithmic,no-resolve
-RULE-SET,https://raw.githubusercontent.com/kevshen13/surge-rules/main/programs/atas.list,ATAS,no-resolve
+RULE-SET,https://raw.githubusercontent.com/kevshen13/surge-rules/main/programs/atas-auth.list,DIRECT,no-resolve
+RULE-SET,https://raw.githubusercontent.com/kevshen13/surge-rules/main/programs/atas.list,Proxy,no-resolve
 ```
 
 Define the policy groups in the consuming profile; lists do not contain exit choices.

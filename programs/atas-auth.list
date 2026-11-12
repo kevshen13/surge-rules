@@ -1,0 +1,21 @@
+# NAME: ATAS login and platform-session endpoints
+# UPDATED: 2026-11-12
+# ROUTING: DIRECT for the household's shared ISP exit.
+# SOURCE: https://help.atas.net/en/support/solutions/articles/72000602319-authorization-window-and-platform-version-selection
+# SOURCE: https://intercom.help/quantvps/en/articles/12555696-how-to-whitelist-atas-data-feeds-on-your-vps
+# VERIFIED: F2/E2/T2/R2 DNS and observed TCP 6450 connections, 2026-11-12.
+# ORDER: Before programs/atas.list and generic program/process rules.
+# LIMIT: These platform sessions may also carry ATAS Sim/Crypto services.
+# Routing cannot distinguish encrypted authentication messages from other data in the same connection.
+# Broker/data providers such as CQG/Rithmic retain their own independent policies.
+
+DOMAIN,id.atas.net
+AND,((DEST-PORT,6450),(PROTOCOL,TCP),(DOMAIN,auto.platform.atas.net))
+AND,((DEST-PORT,6450),(PROTOCOL,TCP),(DOMAIN,f2.orderflowtrading.net))
+AND,((DEST-PORT,6450),(PROTOCOL,TCP),(DOMAIN,e2.orderflowtrading.net))
+AND,((DEST-PORT,6450),(PROTOCOL,TCP),(DOMAIN,t2.orderflowtrading.net))
+AND,((DEST-PORT,6450),(PROTOCOL,TCP),(DOMAIN,r2.orderflowtrading.net))
+AND,((DEST-PORT,6450),(PROTOCOL,TCP),(IP-CIDR,51.178.130.10/32))
+AND,((DEST-PORT,6450),(PROTOCOL,TCP),(IP-CIDR,142.132.201.231/32))
+AND,((DEST-PORT,6450),(PROTOCOL,TCP),(IP-CIDR,135.181.115.236/32))
+AND,((DEST-PORT,6450),(PROTOCOL,TCP),(IP-CIDR,65.21.32.251/32))
