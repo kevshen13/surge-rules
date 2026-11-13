@@ -1,7 +1,7 @@
 # NAME: cTrader
 # TYPE: program
 # REPO: https://github.com/kevshen13/surge-rules
-# UPDATED: 2026-11-12
+# UPDATED: 2026-11-13
 # ROUTING: Choose an independent policy for each list; app and feed exits need not match.
 # ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
 # GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
@@ -10,4 +10,11 @@
 
 DOMAIN-SUFFIX,ctrader.com
 DOMAIN-SUFFIX,spotware.com
+
+# Official Pepperstone web client references config/assets on these domains.
+# Source: https://ct.pepperstone.com/
+DOMAIN-SUFFIX,ctradercloud.com
+DOMAIN-SUFFIX,ctwebcloud.com
+# Observed Windows cTrader Algo/platform hub; keep it with the app policy.
+DOMAIN,hublive.spotware.ia.spotwa.re
 PROCESS-NAME,cTrader
