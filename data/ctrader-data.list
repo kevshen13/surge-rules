@@ -1,11 +1,21 @@
 # NAME: cTrader 数据
 # TYPE: data
 # REPO: https://github.com/kevshen13/surge-rules
-# UPDATED: 2026-11-12
+# UPDATED: 2026-11-13
 # ROUTING: Choose an independent policy for each list; app and feed exits need not match.
 # ORDER: Place data-source DOMAIN/IP rules before program PROCESS-NAME rules.
 # GATEWAY: PROCESS-NAME identifies only processes on the Surge host, not remote LAN PCs.
 # SOURCE: https://help.ctrader.com/open-api/proxies-endpoints/
-# NOTE: Covers documented Open API endpoints. Broker-branded desktop access points may use other hostnames.
+# NOTE: Covers Open API plus verified desktop proxy endpoints; match before generic China-direct rules.
 
 DOMAIN-SUFFIX,ctraderapi.com
+
+# Desktop proxy namespaces advertised in the observed server certificate.
+DOMAIN-SUFFIX,p.ctrader.com
+DOMAIN-SUFFIX,p.c-trader.com
+
+# Windows cTrader China accelerator aliases, observed 2026-11-13.
+# Both present a p.ctrader.com certificate with *.p.ctrader.com / *.p.c-trader.com SANs.
+# Use exact hostnames; never route all Alibaba Cloud accelerator domains as cTrader.
+DOMAIN,ga-bp18jk89ublrpdjh4gyzr.aliyunga0017.com
+DOMAIN,ga-bp1yijrs7ynsoahqkfska.aliyunga0019.com
